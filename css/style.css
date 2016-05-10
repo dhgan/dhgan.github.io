@@ -137,10 +137,10 @@ body,
   height: 100%;
 }
 body {
-  font-family: "微软雅黑", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, "微软雅黑", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
   background: #fff;
-  color: rgba(0,0,0,0.6);
+  color: #000;
   -webkit-overflow-scrolling: touch;
 }
 h1,
@@ -1039,7 +1039,7 @@ a {
 .article-entry h6 {
   margin-top: 20px;
   font-weight: 300;
-  color: #574c4c;
+  color: #131010;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
