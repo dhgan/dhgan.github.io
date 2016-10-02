@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>line-height和vertical-aline | GDH&#39; blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本文基本来自张鑫旭的博客，自己简写了许多。
+line-height和vertical-aline行内框盒子模型1&amp;lt;p&amp;gt;这是一行普通的文字，这里有个 &amp;lt;em&amp;gt;em&amp;lt;/em&amp;gt; 标签。&amp;lt;/p&amp;gt;
+
+content area(内容区域),一种围绕文字看不见的盒子，高度等于font-size大小；
+inline boxes(内联盒子)，让内容排成一行，包含inl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="line-height和vertical-aline">
+<meta property="og:url" content="http://yoursite.com/2016/05/14/line-height和vertical-align/index.html">
+<meta property="og:site_name" content="GDH' blog">
+<meta property="og:description" content="本文基本来自张鑫旭的博客，自己简写了许多。
+line-height和vertical-aline行内框盒子模型1&amp;lt;p&amp;gt;这是一行普通的文字，这里有个 &amp;lt;em&amp;gt;em&amp;lt;/em&amp;gt; 标签。&amp;lt;/p&amp;gt;
+
+content area(内容区域),一种围绕文字看不见的盒子，高度等于font-size大小；
+inline boxes(内联盒子)，让内容排成一行，包含inl">
+<meta property="og:image" content="http://yoursite.com/images/test.png">
+<meta property="og:image" content="http://yoursite.com/images/test.png">
+<meta property="og:image" content="http://yoursite.com/images/test.png">
+<meta property="og:image" content="http://yoursite.com/images/test.png">
+<meta property="og:image" content="http://yoursite.com/images/test.png">
+<meta property="og:image" content="http://yoursite.com/images/test.png">
+<meta property="og:image" content="http://yoursite.com/images/test.png">
+<meta property="og:updated_time" content="2016-05-14T15:21:29.670Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="line-height和vertical-aline">
+<meta name="twitter:description" content="本文基本来自张鑫旭的博客，自己简写了许多。
+line-height和vertical-aline行内框盒子模型1&amp;lt;p&amp;gt;这是一行普通的文字，这里有个 &amp;lt;em&amp;gt;em&amp;lt;/em&amp;gt; 标签。&amp;lt;/p&amp;gt;
+
+content area(内容区域),一种围绕文字看不见的盒子，高度等于font-size大小；
+inline boxes(内联盒子)，让内容排成一行，包含inl">
+<meta name="twitter:image" content="http://yoursite.com/images/test.png">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="/images/head.png" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">GDH</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">Everything will be gone.</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/随笔">随笔</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/gandonghui" title="github">github</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 10px;">CSS3</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/JS/" style="font-size: 20px;">JS</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://melodyjie.github.io">杨杰</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">GDH</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="/images/head.png" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">GDH</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">Everything will be gone.</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/gandonghui" title="github">github</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-line-height和vertical-align" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/14/line-height和vertical-align/" class="article-date">
+  	<time datetime="2016-05-14T14:32:32.000Z" itemprop="datePublished">2016-05-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      line-height和vertical-aline
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文基本来自张鑫旭的<a href="http://www.zhangxinxu.com/wordpress/2015/08/css-deep-understand-vertical-align-and-line-height/" target="_blank" rel="external">博客</a>，自己简写了许多。</p>
+<h1 id="line-height和vertical-aline"><a href="#line-height和vertical-aline" class="headerlink" title="line-height和vertical-aline"></a>line-height和vertical-aline</h1><h2 id="行内框盒子模型"><a href="#行内框盒子模型" class="headerlink" title="行内框盒子模型"></a>行内框盒子模型</h2><pre><code><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是一行普通的文字，这里有个 <span class="tag">&lt;<span class="name">em</span>&gt;</span>em<span class="tag">&lt;/<span class="name">em</span>&gt;</span> 标签。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</code></pre><ul>
+<li>content area(内容区域),一种围绕文字看不见的盒子，高度等于font-size大小；</li>
+<li>inline boxes(内联盒子)，让内容排成一行，包含<code>inline</code>水平的标签（span, a, em等，例如上面的em)，则属于“内联盒子”; 如果是个光秃秃的文字，则属于“匿名内联盒子”；</li>
+<li>line boxes(行框盒子)，每一行是一个“行框盒子”，每个“行框盒子”是由一个个“内联盒子”组成；</li>
+<li>containing box(包含盒子)，<code>&lt;p&gt;</code>标签所在“包含盒子”，由一行行“行框盒子”(line boxes)组成。</li>
+</ul>
+<a id="more"></a>
+<h2 id="line-height"><a href="#line-height" class="headerlink" title="line-height"></a>line-height</h2><p>line-height: 两行文字基线之间的距离，若未定义height，则高度由line-height决定。</p>
+<p>内容区域高度(content area) + 行间距(vertical spacing) = 行高(line-height)</p>
+<p>line-height: 1.5/1.5em/150%区别</p>
+<ul>
+<li>1.5: line-height=1.5*font-size(自己的font-size，父标签算出后，若子标签继承，则需按自己的font-siz重新计算line-height);</li>
+<li>1.5em/150%: line-height=1.5*font-size(父亲的font-size, 父标签算出后，若子标签继承，则继承父标签的line-height);</li>
+</ul>
+<h2 id="vertical-align"><a href="#vertical-align" class="headerlink" title="vertical-align"></a>vertical-align</h2><pre><code>/*关键字值*/
+vertical-align: baseline;//(默认)
+vertical-align: sub;
+vertical-align: super;
+vertical-align: text-top;
+vertical-align: text-bottom;
+vertical-align: middle;
+vertical-align: top;
+vertical-align: bottom;
+
+/*&lt;长度&gt;值*/
+vertical-align: 10em;
+vertical-align: 4px;
+
+/*&lt;百分比&gt;值*/
+vertical-align: 10%;
+
+/*全局值*/
+vertical-align: inherit;
+vertical-align: initial;
+vertical-align: unset;
+</code></pre><p>长度值和百分比值是根据基线(baseline)来移动的，其中百分比是相对line-height的。</p>
+<div style="background-color: #e5edff;"><img src="/images/test.png" alt="图片"></div><br>如上图所示，图片下面会有一段空白，why?<br>首先，div里面存在空白节点，相当里面有空文本。这就涉及图片和文本的对齐方式问题。由于<code>vertical-align</code>的默认值为<code>baseline</code>，当图片的底端是紧贴父元素的<code>baseline</code>，而文本呢？它并不是底端紧贴父元素<code>baseline</code>,而是比<code>baseline</code>还低，用过英文本子的就知道，英文本子是四线三格，其中第三条线就是<code>baseline</code>，第三条线到第四条线就是，上面空白的高度。看下面加了文字后就看得更清楚了。<br><div style="background-color: #e5edff;"><img src="/images/test.png" alt="图片">gdh</div><br>所以要怎么解决这个问题呢？<br><br>1. 让vertical-align失效<br>图片默认是<code>inline</code>水平，而<code>vertical-align</code>对块状水平元素无感。因此，我们只要让图片<code>display</code>设为<code>block</code>就可以了，或者浮动或绝对定位等。例如  <code>img{display: block;}</code><br><div style="background-color: #e5edff;"><img src="/images/test.png" alt="图片" style="display:block"></div><br>2. 使用其他vertical-align值<br>使用<code>vertical:bottom/middle/top</code>等，可使图片(底部/中间/上)分别于文字相应部分对齐，从而不让文本框露出(除非<code>font-size</code>太大)<br><div style="background-color: #e5edff;"><img src="/images/test.png" alt="图片" style="vertical-align:bottom">gdh</div><br>3. 修改line-height<br>    <code>div{line-height:5px}</code><br><div style="background-color: #e5edff;line-height:5px;"><img src="/images/test.png" alt="图片"><span>gdh</span></div><br>当文本行高足够小时，也可使文本框不溢出，但文字可能溢出<br>4. 修改font-size<br><code>line-hieght</code>的值是由<code>font-size</code>计算出来的，若<code>font-size=0</code>,则line-height就是0，<br>    <code>div{font-size:0}</code><br><div style="background-color: #e5edff;font-size:0;"><img src="/images/test.png" alt="图片"><span>gdh</span></div>
+
+<h2 id="衍生：垂直居中"><a href="#衍生：垂直居中" class="headerlink" title="衍生：垂直居中"></a>衍生：垂直居中</h2><pre><code><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"background-color: #e5edff; font-size:0; line-height: 240px;"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"/images/test.png"</span> <span class="attr">alt</span>=<span class="string">"图片"</span> <span class="attr">style</span>=<span class="string">"vertical-align: middle;"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</code></pre><div style="background-color: #e5edff; font-size:0; line-height: 240px;"><img src="/images/test.png" alt="图片" style="vertical-align: middle;"></div><br>font-size=0的原因，是middle中线比不是字符内容的绝对居中，不设置会导致并不是真正的垂直居中。<br>t通过<code>line-height</code>定高，元素<code>vertical-align:middle</code>垂直居中的方法不仅适用于现代浏览器，连IE7也是支持的。<br><br>## inline-block和baseline<br><br>规范：<code>inline-block</code>元素的若里面没有<code>inlie</code>内联元素或者<code>overflow</code>不是visible,则该元素的基线就是margin底边缘，否则，其基线就是元素里面最后一行内联元素的基线。<br>什么意思呢？来看一个例子<br>    <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"display:inline-block; background-color:#e5edff; width:100px; height:100px;"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"display:inline-block; background-color:#e5edff;  width:100px; height:100px;"</span>&gt;</span></span><br><span class="line">x-baseline</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><br><br><div style="display:inline-block; background-color:#e5edff; width:100px; height:100px;"></div> <div style="display:inline-block; background-color:#e5edff;  width:100px; height:100px;" onclick="this.innerHTML=this.innerHTML?'':'x-baseline'">x-baseline</div>
+
+<p>粗看一眼，<code>style</code>都一样，就是一个有内容，一个没有，为什么有内容的<code>div</code>掉下去了？<br>其实上面的规范说明了一切，第一个<code>div</code>没有内容，它的<code>baseline</code>是容器<code>margin</code>下边缘，而第二个<code>div</code>有内容，它的<code>baseline</code>是x-baseline的基线位置，两者对齐，第二个div不得不掉下去了。</p>
+<h2 id="多行文字垂直居中"><a href="#多行文字垂直居中" class="headerlink" title="多行文字垂直居中"></a>多行文字垂直居中</h2><div style="background-color: #e5edff; line-height: 340px; "><span style="width: 0; vertical-align: middle; display:inline-block; font-size: 0"></span><span style="vertical-align:middle; display:inline-block; line-height:1.4em;">一个inline-block元素，如果里面没有inline内联元素，或者overflow不是visible，则该元素的基线就是其margin底边缘，否则，其基线就是元素里面最后一行内联元素的基线。</span></div>
+
+
+<h2 id="多图片垂直居中"><a href="#多图片垂直居中" class="headerlink" title="多图片垂直居中"></a>多图片垂直居中</h2><p>css<br>    <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span>&#123;<span class="attribute">overflow</span>: hidden; <span class="attribute">zoom</span>: <span class="number">1</span>;&#125;</span><br><span class="line"><span class="selector-tag">ul</span>&gt;<span class="selector-tag">li</span>&#123;</span><br><span class="line">	<span class="attribute">list-style</span>: none;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">140px</span>;</span><br><span class="line">	<span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">	<span class="attribute">text-align</span>: center;</span><br><span class="line">	<span class="attribute">float</span>: left;</span><br><span class="line">	<span class="attribute">border</span>: <span class="number">1px</span> solid red; </span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span>&gt;<span class="selector-tag">li</span> <span class="selector-tag">img</span>&#123;</span><br><span class="line">	<span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span>&gt;<span class="selector-tag">li</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>html</p>
+<pre><code><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"./images/test.png"</span> <span class="attr">alt</span>=<span class="string">""</span> <span class="attr">style</span>=<span class="string">"width: 50px"</span> /&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"./images/test.png"</span> <span class="attr">alt</span>=<span class="string">""</span> <span class="attr">style</span>=<span class="string">"width: 60px"</span>/&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"./images/test.png"</span> <span class="attr">alt</span>=<span class="string">""</span> <span class="attr">style</span>=<span class="string">"width: 100px"</span>/&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"./images/test.png"</span> <span class="attr">alt</span>=<span class="string">""</span> <span class="attr">style</span>=<span class="string">"width: 120px"</span>/&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</code></pre><iframe src="/image-center.html" style="height:200px; width: 100%"></iframe>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/15/Web存储机制/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Web存储机制
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/13/js数据类型和typeof/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js数据类型和typeof</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="line-height和vertical-align" data-title="line-height和vertical-aline" data-url="http://yoursite.com/2016/05/14/line-height和vertical-align/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 GDH
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

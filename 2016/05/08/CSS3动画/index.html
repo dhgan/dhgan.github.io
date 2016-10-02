@@ -64,7 +64,7 @@ scale3d(x,y,z)
 
 matrix3d
 把所有3D转换">
-<meta property="og:updated_time" content="2016-05-08T15:52:30.609Z">
+<meta property="og:updated_time" content="2016-05-14T15:05:09.945Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS3动画">
 <meta name="twitter:description" content="CSS3动画transform 改变元素样式，并不会产生动画效果，有以下属性
@@ -184,7 +184,7 @@ matrix3d
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+						<a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 10px;">CSS3</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/JS/" style="font-size: 20px;">JS</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
 					</div>
 				</section>
 				
@@ -276,7 +276,7 @@ matrix3d
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/">JS</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
 	</div>
 
         
@@ -287,7 +287,7 @@ matrix3d
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="CSS3动画"><a href="#CSS3动画" class="headerlink" title="CSS3动画"></a>CSS3动画</h2><h3 id="transform-改变元素样式，并不会产生动画效果，有以下属性"><a href="#transform-改变元素样式，并不会产生动画效果，有以下属性" class="headerlink" title="transform 改变元素样式，并不会产生动画效果，有以下属性"></a>transform 改变元素样式，并不会产生动画效果，有以下属性</h3><table>
+        <h1 id="CSS3动画"><a href="#CSS3动画" class="headerlink" title="CSS3动画"></a>CSS3动画</h1><h2 id="transform-改变元素样式，并不会产生动画效果，有以下属性"><a href="#transform-改变元素样式，并不会产生动画效果，有以下属性" class="headerlink" title="transform 改变元素样式，并不会产生动画效果，有以下属性"></a>transform 改变元素样式，并不会产生动画效果，有以下属性</h2><table>
 <thead>
 <tr>
 <th>函数</th>
@@ -318,7 +318,7 @@ matrix3d
 </tbody>
 </table>
 <a id="more"></a>
-<h3 id="transiton-一个简单的动画属性，animation的简化版本"><a href="#transiton-一个简单的动画属性，animation的简化版本" class="headerlink" title="transiton 一个简单的动画属性，animation的简化版本"></a>transiton 一个简单的动画属性，animation的简化版本</h3><pre><code><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transition</span>: <span class="selector-tag">width</span> 2<span class="selector-tag">s</span>,<span class="selector-tag">height</span> 2<span class="selector-tag">s</span>,<span class="selector-tag">transform</span> 2<span class="selector-tag">s</span> <span class="selector-tag">ease-in</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="transiton-一个简单的动画属性，animation的简化版本"><a href="#transiton-一个简单的动画属性，animation的简化版本" class="headerlink" title="transiton 一个简单的动画属性，animation的简化版本"></a>transiton 一个简单的动画属性，animation的简化版本</h2><pre><code><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attribute">transition</span>: width <span class="number">2s</span>,height <span class="number">2s</span>,transform <span class="number">2s</span> ease-in;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </code></pre><p>transition属性：  </p>
 <table>
 <thead>
@@ -373,7 +373,7 @@ matrix3d
 </tr>
 </tbody>
 </table>
-<h3 id="animation"><a href="#animation" class="headerlink" title="animation"></a>animation</h3><pre><code><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">keyframes</span> <span class="string">'wobble'</span>&#123;</span><br><span class="line">	0%&#123;</span><br><span class="line">	   <span class="attribute">left</span>:<span class="number">100px</span></span><br><span class="line">	&#125;</span><br><span class="line">	30%&#123;</span><br><span class="line">	   <span class="attribute">left</span>:<span class="number">300px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	100%&#123;</span><br><span class="line">	   <span class="attribute">left</span>:<span class="number">500px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.animate</span>&#123;</span><br><span class="line">	<span class="attribute">left</span>:<span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">-webkit-animation</span>:wobble <span class="number">0.5s</span> ease-out;</span><br><span class="line">	<span class="attribute">-webkit-animation-fill-mode</span>:backwards;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="animation"><a href="#animation" class="headerlink" title="animation"></a>animation</h2><pre><code><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">keyframes</span> <span class="string">'wobble'</span>&#123;</span><br><span class="line">	0%&#123;</span><br><span class="line">	   <span class="attribute">left</span>:<span class="number">100px</span></span><br><span class="line">	&#125;</span><br><span class="line">	30%&#123;</span><br><span class="line">	   <span class="attribute">left</span>:<span class="number">300px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	100%&#123;</span><br><span class="line">	   <span class="attribute">left</span>:<span class="number">500px</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.animate</span>&#123;</span><br><span class="line">	<span class="attribute">left</span>:<span class="number">100px</span>;</span><br><span class="line">	<span class="attribute">-webkit-animation</span>:wobble <span class="number">0.5s</span> ease-out;</span><br><span class="line">	<span class="attribute">-webkit-animation-fill-mode</span>:backwards;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </code></pre><p>属性：  </p>
 <table>
 <thead>
@@ -443,6 +443,11 @@ matrix3d
       </div>
     </a>
   
+  
+    <a href="/2016/04/15/闭包原型和继承/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">闭包原型和继承</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 

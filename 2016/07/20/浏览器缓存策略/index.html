@@ -4,18 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>小记 | GDH&#39; blog</title>
+  <title>浏览器缓存控制策略 | GDH&#39; blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天试了一下用hexo建站，没想到这么容易，不过还有很多没有完善，一些优化也没做，今天就到这里了吧。">
+  <meta name="description" content="浏览器缓存控制策略Expires采用准确日期告诉浏览器过期日期
+Cache-Control采用max-age秒数告诉浏览器过期时间，优先级高于expires">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小记">
-<meta property="og:url" content="http://yoursite.com/2016/05/08/小记/index.html">
+<meta property="og:title" content="浏览器缓存控制策略">
+<meta property="og:url" content="http://yoursite.com/2016/07/20/浏览器缓存策略/index.html">
 <meta property="og:site_name" content="GDH' blog">
-<meta property="og:description" content="今天试了一下用hexo建站，没想到这么容易，不过还有很多没有完善，一些优化也没做，今天就到这里了吧。">
-<meta property="og:updated_time" content="2016-05-08T07:48:16.661Z">
+<meta property="og:description" content="浏览器缓存控制策略Expires采用准确日期告诉浏览器过期日期
+Cache-Control采用max-age秒数告诉浏览器过期时间，优先级高于expires">
+<meta property="og:updated_time" content="2016-10-01T09:59:00.797Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小记">
-<meta name="twitter:description" content="今天试了一下用hexo建站，没想到这么容易，不过还有很多没有完善，一些优化也没做，今天就到这里了吧。">
+<meta name="twitter:title" content="浏览器缓存控制策略">
+<meta name="twitter:description" content="浏览器缓存控制策略Expires采用准确日期告诉浏览器过期日期
+Cache-Control采用max-age秒数告诉浏览器过期时间，优先级高于expires">
   
   
     <link rel="icon" href="/favicon.png">
@@ -172,11 +175,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-小记" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-浏览器缓存策略" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/08/小记/" class="article-date">
-  	<time datetime="2016-05-08T06:50:32.000Z" itemprop="datePublished">2016-05-08</time>
+      <a href="/2016/07/20/浏览器缓存策略/" class="article-date">
+  	<time datetime="2016-07-20T12:50:32.000Z" itemprop="datePublished">2016-07-20</time>
 </a>
     </div>
   
@@ -189,7 +192,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      小记
+      浏览器缓存控制策略
     </h1>
   
 
@@ -198,7 +201,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/">JS</a></li></ul>
 	</div>
 
         
@@ -209,7 +212,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天试了一下用hexo建站，没想到这么容易，不过还有很多没有完善，一些优化也没做，今天就到这里了吧。</p>
+        <h1 id="浏览器缓存控制策略"><a href="#浏览器缓存控制策略" class="headerlink" title="浏览器缓存控制策略"></a>浏览器缓存控制策略</h1><h3 id="Expires"><a href="#Expires" class="headerlink" title="Expires"></a>Expires</h3><p>采用准确日期告诉浏览器过期日期</p>
+<h3 id="Cache-Control"><a href="#Cache-Control" class="headerlink" title="Cache-Control"></a>Cache-Control</h3><p>采用max-age秒数告诉浏览器过期时间，优先级高于expires</p>
+<a id="more"></a>
+<h3 id="Last-Modified-If-Modified-Since"><a href="#Last-Modified-If-Modified-Since" class="headerlink" title="Last-Modified/If-Modified-Since"></a>Last-Modified/If-Modified-Since</h3><p>配合Cache-Control使用，上述过期后则检验。</p>
+<h3 id="ETag-If-None-Match"><a href="#ETag-If-None-Match" class="headerlink" title="ETag/If-None-Match"></a>ETag/If-None-Match</h3><p>ETag表示文件的唯一标识，同样配合Cache-Control使用，If-None-Match优先于If-Modifed-Since</p>
+<p>Etag出原因： </p>
+<ul>
+<li>文件可能被周期性重写，但数据并没有改变，修改日期变了</li>
+<li>修改的部分不重要，如注释，拼写</li>
+<li>有些服务器无法确定判断某页面的最后修改日期</li>
+<li>Last-Modified只能精确到秒，有些文档会在亚秒间隙发生变化。</li>
+</ul>
 
       
     </div>
@@ -219,18 +233,18 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/05/10/跨域/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/09/08/面向对象/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          跨域
+          面向对象三大特性
         
       </div>
     </a>
   
   
-    <a href="/2016/05/08/CSS3动画/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">CSS3动画</div>
+    <a href="/2016/06/10/清浮动/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">清浮动</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -265,7 +279,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="小记" data-title="小记" data-url="http://yoursite.com/2016/05/08/小记/"></div>
+	<div class="ds-thread" data-thread-key="浏览器缓存策略" data-title="浏览器缓存控制策略" data-url="http://yoursite.com/2016/07/20/浏览器缓存策略/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>JS高技巧 | GDH&#39; blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1.高级函数1.1 安全类型检查typeof和instanceof
+1.2 作用域安全的构造函数不用new创建对象，this的指向性问题(指向上一级)。
+1.3 惰性载入函数多if不用每次的判断">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS高技巧">
+<meta property="og:url" content="http://yoursite.com/2016/05/20/JS高级技巧/index.html">
+<meta property="og:site_name" content="GDH' blog">
+<meta property="og:description" content="1.高级函数1.1 安全类型检查typeof和instanceof
+1.2 作用域安全的构造函数不用new创建对象，this的指向性问题(指向上一级)。
+1.3 惰性载入函数多if不用每次的判断">
+<meta property="og:updated_time" content="2016-10-02T06:15:23.713Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS高技巧">
+<meta name="twitter:description" content="1.高级函数1.1 安全类型检查typeof和instanceof
+1.2 作用域安全的构造函数不用new创建对象，this的指向性问题(指向上一级)。
+1.3 惰性载入函数多if不用每次的判断">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="/images/head.png" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">GDH</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">Everything will be gone.</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/随笔">随笔</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/gandonghui" title="github">github</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 10px;">CSS3</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/JS/" style="font-size: 20px;">JS</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://melodyjie.github.io">杨杰</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">GDH</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="/images/head.png" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">GDH</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">Everything will be gone.</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/gandonghui" title="github">github</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-JS高级技巧" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/20/JS高级技巧/" class="article-date">
+  	<time datetime="2016-05-20T09:57:05.000Z" itemprop="datePublished">2016-05-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JS高技巧
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/">JS</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-高级函数"><a href="#1-高级函数" class="headerlink" title="1.高级函数"></a>1.高级函数</h2><h3 id="1-1-安全类型检查"><a href="#1-1-安全类型检查" class="headerlink" title="1.1 安全类型检查"></a>1.1 安全类型检查</h3><p><code>typeof</code>和<code>instanceof</code></p>
+<h3 id="1-2-作用域安全的构造函数"><a href="#1-2-作用域安全的构造函数" class="headerlink" title="1.2 作用域安全的构造函数"></a>1.2 作用域安全的构造函数</h3><p>不用new创建对象，this的指向性问题(指向上一级)。</p>
+<h3 id="1-3-惰性载入函数"><a href="#1-3-惰性载入函数" class="headerlink" title="1.3 惰性载入函数"></a>1.3 惰性载入函数</h3><p>多if不用每次的判断</p>
+<a id="more"></a>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createXHR</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">window</span>.XMLHttpRequest)</span><br><span class="line">		createXHR=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">new</span> XMLHttpRequest;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">window</span>.ActiveXObject)&#123;</span><br><span class="line">		createXHR=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">new</span> ActiveXObject(<span class="string">"Microsoft.XMLHttp"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="1-4-函数绑定"><a href="#1-4-函数绑定" class="headerlink" title="1.4 函数绑定"></a>1.4 函数绑定</h3><p>用于改变函数的执行环境<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bind</span>(<span class="params">fn, context</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> fn.apply(context, <span class="built_in">arguments</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>context是fn函数的执行环境。<br>ES5中有一个原生bind()方法，使用方法：<code>fn.bind(context)</code>;</p>
+<h3 id="1-5-函数柯里化"><a href="#1-5-函数柯里化" class="headerlink" title="1.5 函数柯里化"></a>1.5 函数柯里化</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">curry</span>(<span class="params">fn</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> args=<span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>, <span class="number">1</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="keyword">var</span> innerArgs=<span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);</span><br><span class="line">		<span class="keyword">var</span> finalArgs=args.concat(innerArgs);</span><br><span class="line">		<span class="keyword">return</span> fn.apply(<span class="literal">null</span>, finalArgs);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>先传一些参数，形成一个函数，以后就可以用先前传的参数。有点继承的意思。<br>与bind结合<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bind</span>(<span class="params">fn, context</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> args=<span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>, <span class="number">2</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="keyword">var</span> innerArgs=<span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);</span><br><span class="line">		<span class="keyword">var</span> finalArgs=args.concat(innerArgs);</span><br><span class="line">		<span class="keyword">return</span> fn.apply(context, finalArgs);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>ES5原生自带bind方法柯里化,使用方法：<code>fn.bind(context, args)</code></p>
+<h2 id="2-防篡改对象"><a href="#2-防篡改对象" class="headerlink" title="2. 防篡改对象"></a>2. 防篡改对象</h2><h3 id="2-1-不可篡改对象"><a href="#2-1-不可篡改对象" class="headerlink" title="2.1 不可篡改对象"></a>2.1 不可篡改对象</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var person=&#123;name: "Nicholas&#125;;</span><br><span class="line">Object.preventExtensions(person);</span><br><span class="line">person.age=29;</span><br><span class="line">alert(person.age); //undefined</span><br></pre></td></tr></table></figure>
+<p><code>preventExtensions</code>不可添加属性方法，可修改、删除属性方法。<br>通过<code>Object.isExtensions(person)</code>检查是否可扩展。</p>
+<h3 id="2-2-密封对象"><a href="#2-2-密封对象" class="headerlink" title="2.2 密封对象"></a>2.2 密封对象</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>.seal(person)</span><br></pre></td></tr></table></figure>
+<p><code>seal</code>不可添加和删除属性方法，可修改<br><code>Object.isSealed(person)</code>检查是密封</p>
+<h3 id="2-3-冻结对象"><a href="#2-3-冻结对象" class="headerlink" title="2.3 冻结对象"></a>2.3 冻结对象</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>.freeze(person)</span><br></pre></td></tr></table></figure>
+<p><code>freeze</code>不可添加、删除、修改对象。<br><code>Object.isFrozen(person)</code>检查是否冻结</p>
+<h2 id="3-高级定时器"><a href="#3-高级定时器" class="headerlink" title="3. 高级定时器"></a>3. 高级定时器</h2><p>JavaScropt是运行在单线程的环境中的，定时器仅仅只是计划代码在未来某个时间执行。执行时机是不能保证的，因为在页面的生命周期中，不同时间可能有其他代码在控制JavaScript进程。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> btn=<span class="built_in">document</span>.getElementById(<span class="string">"my-btn"</span>);</span><br><span class="line">btn.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="built_in">document</span>.getElementById(<span class="string">"message"</span>).style.visibilit=<span class="string">"visible"</span>;</span><br><span class="line">	&#125;, <span class="number">250</span>);</span><br><span class="line">	<span class="comment">//其他代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>如以上代码，若onclick执行了300ms，那么定时器代码至少要在300ms后才能被执行。详见JavaScript高级程序设计22章。</p>
+<h3 id="3-1-重复定时器"><a href="#3-1-重复定时器" class="headerlink" title="3.1 重复定时器"></a>3.1 重复定时器</h3><p>使用setInterval()创建的定时器确保了定时器代码规范地插入队列中。这个方式问题在于，定时器代码可能在代码再次被添加到队列之前，还没有完全执行，结果导致定时器连续运行好几次。幸好，JavaScript引擎够聪明，能避免这个问题。当使用setInterval()时，仅当没有该定时器的任何其他代码示例是，才将定时器代码添加到队列中。确保了定时器代码加入队列中的最小时间间隔为指定间隔。<br>这种重复定时器的规则有连个问题：(1)某些间隔会被跳过；(2)多个定时器的代码执行之间的间隔会比预期的小。详见JavaScript高级程序设计22章<br>使用链式setTimeout()调用<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="comment">//处理中</span></span><br><span class="line">	setTimeout(argument.callee, interval);</span><br><span class="line">&#125;, interval);</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-2-Yielding-Processes"><a href="#3-2-Yielding-Processes" class="headerlink" title="3.2 Yielding Processes"></a>3.2 Yielding Processes</h3><p>JavaScript的运行时间内存大小被严格限制，如何解决脚本长时间运行的问题？<br>如果该处理<strong>不是必须同步完成</strong>，而且<strong>数据顺序不是非常重要</strong>，则可以使用定时器分割这个函数。这是一种<strong>数组分块</strong>(array chunking)的技术，小块小块地处理数组。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> item=array.shift();</span><br><span class="line">	process(item);</span><br><span class="line">	<span class="keyword">if</span>(array.length&gt;<span class="number">0</span>)&#123;</span><br><span class="line">	setTimeout(<span class="built_in">arguments</span>.callee, <span class="number">100</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;, <span class="number">100</span>&#125;;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">chunk</span>(<span class="params">array, process, context</span>)</span>&#123;</span><br><span class="line">	setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="keyword">var</span> item=array.shift();</span><br><span class="line">		process(item);</span><br><span class="line">		<span class="keyword">if</span>(array.length&gt;<span class="number">0</span>)&#123;</span><br><span class="line">		setTimeout(<span class="built_in">arguments</span>.callee, <span class="number">100</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;, <span class="number">100</span>&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-3-函数节流"><a href="#3-3-函数节流" class="headerlink" title="3.3 函数节流"></a>3.3 函数节流</h3><p>若第一次调用函数，创建了一个定时器，第二次调用那个函数，又创建了一个定时器，若第一个定时器还没有运行完，就会导致多个定时，若多次调用那个函数，则创建很多定时器，可能导致浏览器崩溃，解决方法就是：第二次调用函数是，清除上一个定时器。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/06/10/清浮动/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          清浮动
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/17/Ajax/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Ajax简介</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="JS高级技巧" data-title="JS高技巧" data-url="http://yoursite.com/2016/05/20/JS高级技巧/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 GDH
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

